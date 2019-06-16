@@ -505,18 +505,26 @@ label chapter1:
     Hiroya "Um, no."
     Akari "Sorry, I’ll be quiet!"
     "Way to go, Akari, getting me in trouble as usual."
+    play sound "sfx/sms.ogg"
     "*Bzzt*"
     "My phone buzzes."
     "\"So since sensei is back and we can’t talk during class...\""
+    play sound "sfx/sms.ogg"
     "*Bzzt*"
     "Damnit Akari."
     "\"I thought I’d text you!\""
+    play sound "sfx/sms.ogg"
     "*Bzzt*"
     "\"Anyway, wanna come over for dinner with me and Miyu?. We're making curry tonight! Mom said I could invite you over!\""
     "{i}Dinner{/i}"
     "I press the reply button."
     Hiroya "Food? For free? Hell yeah."
     "Aaand sent."
+    $renpy.music.set_volume(0.0, delay=0.2, channel='music')
+    #pause(0.2)
+    play sound "sfx/sms_akari.ogg"
+    pause(1.0)
+    $renpy.music.set_volume(1.0, delay=4.0, channel='music')
     "*BING*"
     Akari "Oops."
     "And of course she would leave her phone on max volume."
@@ -753,6 +761,7 @@ label chapter1:
     Hojo "*sigh* You could at least pretend to pay attention, Miyazaki."
     Akari "Yes, sensei!"
     "She says that, but I can clearly see her on her phone."
+    play sound "sfx/sms.ogg"
     "*Bzzt*"
     "Of course it’s her. She’s sending me text messages again."
     "\"Back me up on this! Miyu-chan is an introvert! We've got to make sure she becomes friends with her new roommates!\""
@@ -765,6 +774,11 @@ label chapter1:
     menu:
         "Sure, I’ll come over for dinner.":
             "Aaaand sent."
+            $renpy.music.set_volume(0.0, delay=0.2, channel='music')
+            #pause(0.2)
+            play sound "sfx/sms_akari.ogg"
+            pause(1.0)
+            $renpy.music.set_volume(1.0, delay=4.0, channel='music')
             "*BING*"
             "*Snap*"
             "The teacher's chalk breaks against the board."
@@ -797,6 +811,11 @@ label chapter1:
         "Sorry, I already made plans for tonight.":
 
             "Aaaand sent."
+            $renpy.music.set_volume(0.0, delay=0.2, channel='music')
+            #pause(0.2)
+            play sound "sfx/sms_akari.ogg"
+            pause(1.0)
+            $renpy.music.set_volume(1.0, delay=4.0, channel='music')
             "*BING*"
             "*Snap*"
             "The teacher's chalk breaks against the board."
