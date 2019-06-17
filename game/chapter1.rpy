@@ -600,7 +600,7 @@ label chapter1:
     "BaseballGuy" "Though she did ask me to come and find you. She seems to think we might be able to assist each other, if you'll just hear me out for a sec."
     hide Suzuki with dissolve
     Hiroya "I highly doubt that. We don't know each other and..."
-    #play sound "sfx/butcherpaper.ogg"
+    play sound "sfx/butcherpaper_short.ogg"
     Hiroya "Wait, is that... roast beef?"
     #Show roast beef
     BaseballGuy "Huh? This?"
