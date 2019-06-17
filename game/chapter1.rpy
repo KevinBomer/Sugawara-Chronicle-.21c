@@ -214,9 +214,11 @@ label chapter1:
     queue sound "sfx/tstep_tile1.ogg"
     scene hallway 1 with dissolve
     "When I get inside, I go straight to the classroom."
+    play sound "sfx/door_open.ogg"
     "Huh? Why is everyone standing around?"
     "That’s odd. Class definitely should have started by now."
     "Guess I'll see what's going on."
+    play sound "sfx/door_close.ogg"
     scene classroom with wiperight
     "If I didn't know better, I would think it was break time."
     show Akari vhappy p1 u at rightoffset:
@@ -313,6 +315,7 @@ label chapter1:
                         "She slaps her wet sticky hand across the sleeve of my uniform."
                         Hiroya "Nooo, why! That’s gross, Akari!"
                         Akari "That's what you get for mooching!"
+                        play sound "sfx/door_open.ogg"
                         "A moment later, the door slides open."
                         "???" "Please take a seat, everyone."
                         hide Akari with dissolve
@@ -367,6 +370,7 @@ label chapter1:
                         pause (1)
                         Akari p6 angry2 "Hey! How can you say that over fruit?"
                         hide Akari with dissolve
+                        play sound "sfx/door_open_close.ogg"
                         "???" "Take a seat, everyone."
                         "Crap! She actually showed up!"
                         Hirayama "Sorry for the delay, but break time is over. We have lots to go over today!"
@@ -464,7 +468,8 @@ label chapter1:
             Hiroya "I'm sorry..."
             Hiroya "But it was really good. So thanks."
             Akari sad "You are completely hopeless, Hiroya-kun."
-
+            
+            play sound "sfx/door_open.ogg"
             "The door slides open."
             "???" "Please take a seat, everyone."
             hide Akari with dissolve
@@ -537,6 +542,7 @@ label chapter1:
     #Suzuki introduction scene
 
     scene hallway 2 with dissolve
+    play sound "sfx/door_close.ogg"
     "When the lesson ends, I leave the classroom and head downstairs. Akari walks with me until we arrive in the common room for our break period."
     queue sound "sfx/tstep_tile1.ogg"
     show Akari p2 u happy at center with dissolve:
