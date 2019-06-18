@@ -557,6 +557,7 @@ label chapter1:
     "Nope, I have to stop that train of thought."
     Hiroya "I’m going to get a job!"
     play sound "sfx/coindeposit.ogg"
+    queue sound "sfx/vending.ogg"
     "I put the coins in the machine and take my first real meal of the day."
     "I lean up against the wall in my usual spot when..."
     "*THUMP*"
@@ -654,6 +655,7 @@ label chapter1:
     Suzuki "A private school, built by one of this town’s oldest and most influential families, was opened our freshmen year."
     Suzuki "For the first year, things were about the same as they had always been."
     Suzuki "But last year, the unthinkable happened."
+    queue sound "sfx/thunderclap.ogg"
     scene CG Shizuka dark with fade
     Suzuki "Shizuka Endo. "
     Hiroya "Hmm? Endo?"
