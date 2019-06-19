@@ -66,7 +66,8 @@ label chapter1:
     "Here comes my second wind! Just about there-!"
 
     #TUTTY BLOCK#
-    play music SchoolCasual fadein (.2)
+    play sound "sfx/punch.ogg"
+    play music SchoolCasual fadein (2)
     Hiroya "Oof!" with vpunch
     #show Kaori u shocked p1
 
@@ -82,7 +83,9 @@ label chapter1:
 
     "In the blink of an eye, the girl let out a battle cry, swinging her leg as she turned to face me."
     Hiroya "OOF!"
+    play sound "sfx/punch2.ogg"
     "And pounded it into my exposed gut with the force of a bullet train - I didn't have a second to react."
+    queue sound "sfx/whril.ogg"
     $ ("With her sheer force of impact, I'm flung ten feet into the air. The world was spinning out of control!")
     show sky:
         subpixel True xpos 0.5 ypos 0.5 xanchor 0.5 yanchor 0.5 rotate None
