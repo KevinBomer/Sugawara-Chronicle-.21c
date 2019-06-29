@@ -1054,30 +1054,45 @@ label Chapter3somethingAboutAClub:
     "I make my paces around the block, stopping here and there to get a feel for my surroundings. Making a mental list of the resources available to me."
 
     scene bridge sidewalk night with dissolve
-    "Night falls over town and the streets lay empty."
-    "Night makes for good cover. I can make it back to my camping spot undetected."
-    "Following the familiar bends, I make it back to the bridge."
-    "I stop in my tracks. There's two guys lurking near my spot. Are they police?"
-    "...No. No, I recognize those uniforms, but... they're school uniforms. They're black, and kind of blend in with the darkness."
-    "Shit. I think they spotted me. I can't make out their expressions, but their heads are definitely looking in my direction."
-    "They're strolling over. Slowly, but with menace. Neither of them match up with my height, but they're in a pair."
-    "???" "Hey. You from Sugawara?"
-    Hiroya "Huh? Why do you ask?"
-    "???" "Your uniform says it all. You know where we're from, right?"
-    Hiroya "...The new school, right?"
-    snk2 "Sakura no Ki. And don't you forget it."
-    snk1 "We heard there was some chump from Sugawara setting up under the bridge. Hella pathetic, right?"
-    Hiroya "..."
-    snk2 "Now, normally we'd try to take pity on someone down on their luck like that, but after the stunt you jackasses pulled on our campus, well..."
-    snk2 "...I'd reckon that the whole lot of you deserves some discipline."
-    snk1 "Consider this a toll. You ain't setting up camp without payin' up front."
+    "Darkness makes for good cover. It's easier for me to wander without having to watch my back all the time, in case anyone happens to be watching."
+    "Following the familiar bends, I make it back to my bridge."
+    "???""Who's there?!"
+    "I stop in my tracks. There's two guys across the road lurking near my spot, dressed in all black. Are they police?"
+    "...No. No, I recognize those uniforms."
+
+    "I can't make out much. Theres two of them. A tall  one, and one a bit...rounder."
+                      
+    "The round one" "Hey. He's talking to you!"
+    "They're coming over. Slowly, but with menace."
+
+    "The tall one" "We heard there was some chump settin' up out here."
+    "The round one" "And whaddya' know. He's from Sugawara too."
+    "The tall one" "Our lucky day."
+
+    "Great. Some thugs from the other school here to give a guy a hard time. I guess even rich kids gotta do something on their off-time."
+
+    "I guess it can't be helped."
+    "Hiroya" "*sigh* I should have known. Where theres a bridge, there's bound to be trolls."
+	"The round one" "Oh. Smart guy, huh?"
+    	"Hiroya" "I don't want any trouble."
+
+     	"The tall one" "Well the thing is, we're gonna' have a hard time believing that after that shit you guys pulled on our field the other day."
+
+	"The round one" "How dare you embarrass us in front of Shizuka!"
+	
+	"Oh. That's what this is about. Damn that Suzuki."
+
+    "The tall one" "I'd reckon that the whole lot of you deserves some discipline."
+
     Hiroya "I don't have any money. That's why I'm under the bridge, you idiots."
-    snk1 "Oh. Smart guy, huh?"
-    snk2 "You know what happens to barn animals who step outta line?"
-    snk2 "They brand 'em, and make an example of them for everyone else."
+
+    "The round one" "You know what happens to barn animals who step outta line?"
+    "The tall one" "They brand 'em, and make an example of them for everyone else."
     Hiroya "Well, I'm glad the boys at Sakura no Ki are learning all about husbandry. Farming's a good vocation."
-    snk1 "I'm getting real tired of hearing his dumb voice."
-    snk2 "Teach 'im a lesson."
+
+    "The round one" "...what?"
+    "The tall one" "...I'm gettin' sick of seeing your dumb face!"
+    "The round one" "Let's Teach 'im a lesson."
     "The bigger of the two clenched his fist so tightly I could hear his knuckles crack. This wasn't good, but I had nowhere else to run."
     "I raise my fists defensively as the big guy readies a hook."
     "With a quick jab, I aim for his exposed gut."
@@ -1087,7 +1102,7 @@ label Chapter3somethingAboutAClub:
             zoom 1
             linear 0.1 zoom 1.05
             linear 0.1 zoom 1.0
-    snk1 "Oof!"
+    The tall one "Oof!"
     "He keels forward, wincing and glares at me. I go for another hit while he's flinching."
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
@@ -1095,7 +1110,7 @@ label Chapter3somethingAboutAClub:
             zoom 1
             linear 0.1 zoom 1.05
             linear 0.1 zoom 1.0
-    snk2 "C'mon!"
+    The round one "C'mon!"
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
         parallel:
@@ -1110,10 +1125,10 @@ label Chapter3somethingAboutAClub:
             zoom 1
             linear 0.1 zoom 1.05
             linear 0.1 zoom 1.0
-    "With a kick, I manage to kick the little runt off, before glancing up to see the big guy about to body slam me"
+    "With a kick, I manage to kick the little runt off, before glancing up to see the big guy about to hit me."
     "Just in time, I'm able to roll aside, and he hits the pavement."
     "Bouncing to my feet, I'm ready for more. The other two stagger to their feet, their fists at the ready."
-    snk2 "You're in some hot shit now! Now you pissed us off!"
+    "The round one" "You're in some hot shit now! Now you pissed us off!"
     "Now they both rushed in. I could've tried to fend off one or the other, but now they were both throwing hooks, jabs, and cheap shots."
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
@@ -1132,46 +1147,46 @@ label Chapter3somethingAboutAClub:
             zoom 1
             linear 0.1 zoom 1.05
             linear 0.1 zoom 1.0
-    snk1 "Nngh..."
+    "The tall one" "Nngh..."
     "He staggers back, putting a hand over his cheek."
     Hiroya "Oh no. Did a little punch like that really hurt? I had expected better from students of the prestigious Sakura no Ki."
-    snk2 "Tch. We were only gonna leave you with a few bruises, but now you really did it."
+    "The round one" "Tch. We were only gonna leave you with a few bruises, but now you really did it."
     "He reached into his pocket and pulled out something I didn't quite recognize."
-    "It was only when I heard the tell-tale sound of a spring-loaded mechanism, illuminated by the reflection of the full moon, that I realized he had pulled out a switchblade."
+    "It was only when I heard the tell-tale sound of a spring-loaded mechanism that I realized he had pulled out a switchblade."
     Hiroya "...What? Are you really sure you wanna do this?"
-    snk2 "I'm not gonna kill ya. I just wanna see ya {i}bleed{/i}."
+    "The round one" "I'm not gonna kill ya. I just wanna make sure you remember us{i}bleed{/i}."
     Hiroya "Oh, lucky me."
-    "This was really bad. I'm not even that good a fighter, and he was armed. I could try to disarm him, but I have no idea how."
-    "He could do a lot worse to me. Maybe I should cut my losses and run."
+    "This is really bad."
+    "Maybe I should cut my losses and run."
     "I back up a bit, trying to put some distance between me and these thugs."
     "But I feel something hard press against my lower back. My face goes pale; was I surrounded?"
     "I slowly turn my head to look behind me. I'm not met with another hooligan, thankfully."
     "Just a guard rail overseeing the river. And it was quite a drop."
     "So, as it turns out, I'm only surrounded on one side. And the other side isn't too good either."
-    snk2 "Heheh. Now I got you."
-    snk2 "Squeal like a pig for me. Nobody's comin' to save you."
+    "The tall one" "Heheh. Now I got you."
+    "The round one" "Squeal like a pig for me. Nobody's comin' to save you."
     Hiroya "...?"
     "I stare into the shimmering water below. I thought I saw something in the water, but... no, it has to be a trick of the moonlight."
     "I squint my eyes, trying to get a better look."
     "...No. That's not the moonlight. Something's... in the water. Some kind of light."
-    snk2 "C'mon now, look me in the eye when I'm talking to you!"
+    The round one "C'mon now, look me in the eye when I'm talking to you!"
     Hiroya "...Huh?"
     "The light stirs back and forth as I watch it. Suddenly, it stops. I don't understand."
-    "In the back of my mind, I know my life's in danger. So what's this I'm seeing? Am I going crazy?"
-    snk2 "Are you sassing me, punk!? Show some respect, you little shit-"
+    "So what's this I'm seeing? Am I going crazy?"
+    The tall one "Are you screwing with me, punk!? Show some respect, you little shit-"
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
         parallel:
             zoom 1
             linear 0.1 zoom 1.25
     "The guy with the knife grabs my collar, and forces my attention back to him."
-    snk2 "I'm done playing games with you! Maybe I'll throw you down there too if it's so interestin', huh!?"
+    The round one "I'm done playing games with you! Maybe I'll throw you down there too if it's so interestin', huh!?"
 
     #sfx
     "Behind me, there was a splash. It sounded as if somebody had dived into the pool, but..."
     "I glance my head in both directions to do a brief headcount. Still two thugs."
-    snk1 "...Hey, you hear that? Someone's here."
-    snk2 "Tch. Then I guess we better work quickly then-"
+    The tall one "...Hey, you hear that? Someone's here."
+    The round one "Tch. Then I guess we better work quickly then-"
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
         parallel:
@@ -1180,22 +1195,22 @@ label Chapter3somethingAboutAClub:
     #sfx whoosh
     "A silvery light cut between the thug and I, pushing the guy with the knife further back."
     "Losing the grip on his knife, he staggered back, his hand twitching."
-    snk2 "What!? What was that!?"
-    snk1 "L-look!"
+    The round one "What!? Dude what was that!?"
+    The tall one "L-look!"
     Hiroya "...What??"
     "My eyes look over to see a silvery, translucent essence standing still. It simply stood there, a formless mass illuminated by an otherworldly glow."
     "It constantly quivers, and moves on its own. The trunk of the mass shifts, giving it some kind of form."
     "The longer I stare, the more I'm convincing myself that it looks, ever so vaguely... humanoid. And more humanoid by the second."
     Hiroya "What is that?"
-    snk1 "It's an alien!"
-    snk2 "...You serious, dude? Let's just-"
+    The tall one "It's an alien!"
+    The round one "...You serious, dude? Let's just-"
     "The silvery mass jerks forward, its body moving like water, at the two thugs, starstruck by its presence."
     "Reacting, they raise their fists to their head."
-    snk2 "Get it! Just grab it and hold it! I'll get my knife and slit its throat, wherever the hell it is!"
-    snk1 "O-okay!"
+    The round one "Get it! Just grab it and hold it! I'll get my knife and slit its throat, wherever the hell it is!"
+    The tall one "O-okay!"
     "The bigger guy lurched forward, his arms reaching out for a bear hug."
     "...But his arms simply slipped right through it."
-    snk1 "...Huh?"
+    The tall one "...Huh?"
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
         parallel:
@@ -1203,10 +1218,10 @@ label Chapter3somethingAboutAClub:
             linear 0.1 zoom 1.05
             linear 0.1 zoom 1.0
     #sfx slash
-    snk1 "ACK! My back!"
+    The tall one "Ahh! My back!"
     "Invisible to the eye, some part of the silvery mass rapidly descended upon his back, causing him to collapse to the ground."
     "He scrambled forward, and stood back up."
-    snk2 "What're you doing!? Just grab it!"
+    The round one "What're you doing!? Just grab it!"
     "The bigger guy went forward again."
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
@@ -1225,17 +1240,17 @@ label Chapter3somethingAboutAClub:
             linear 0.1 zoom 1.05
             linear 0.1 zoom 1.0
     #sfx slash
-    snk1 "OOF! M-my back!"
-    snk2 "Grr... got it!"
+    The tall one "OOF! M-my back!"
+    The round one "Grr... got it!"
     "By the time the smaller guy clamored for his knife, his bigger buddy had been bested, sprawled onto the ground. Realizing this, the smaller guy's face turned pale."
-    snk2 "What the hell is... damn it!"
+    The round one "What the hell is... damn it!"
     "His exclamations were left to the corner of my eye. I had been gazing at the ghostly form for some time in awe."
     "And I thought I could make out a human. ...No, I definitely did."
     "It was a girl. She was garbed in a wispy white nightgown, clutching a sword. It was still sheathed, holding it above the larger man that had collapsed to the ground."
     "Her hair was a pale, ivory white, moving on its own as if lifted by the wind. Her eyes had a sharp gaze, punctuated by her red irises."
     "She looked over to me, and our eyes met. Her eyes widened upon looking at me, concern washing over her face."
     "...I could see my reflection in them. And I could see the shorter man had grabbed my side in my dazed confusion, holding a knife up against my stomach."
-    snk2 "Alright, you spooky ghost alien {i}thing!{/i} One more move and this guy's guts are going all over the pavement!"
+    The round one "Alright, you spooky ghost alien {i}thing!{/i} One more move and this guy's guts are going all over the pavement!"
     "She scowled silently, lowering her body into a combat stance. My eyes widened, not sure what she was thinking."
     "Her hand tightened against the grip of her katana. My eyes stared at it with growing concern."
     Hiroya "Wait, don't-"
