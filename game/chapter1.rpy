@@ -45,16 +45,18 @@ label chapter1:
     Hiroya "I take a left here."
     "Yeah, I can do this. I'm on my own now, I'd be an idiot if I couldn't find my way around town!"
 
-
+    play sound "sfx/tstep_sidewalk1.ogg"
     scene cafe outside with fade
     "I make my best effort to run as fast as I can, steadily breathing in through my nose and out through my mouth."
     "My eyes dart from side to side. I'm careful to avoid traffic."
     "Last thing I need in my life is to get whallopped and forced back into my father's two-faced care."
 
+    play sound "sfx/tstep_sidewalk2.ogg"
     scene street day with fade
     "Almost there!"
     "Breathe, breathe..."
     "Aha, yes! The gate is still open!"
+    play sound "sfx/tstep_sidewalk2.ogg"
     scene courtyard empty with fade
 
     "I don’t see any students standing around outside. The bell must be seconds from ringing!"
@@ -64,7 +66,8 @@ label chapter1:
     "Here comes my second wind! Just about there-!"
 
     #TUTTY BLOCK#
-    play music SchoolCasual fadein (.2)
+    play sound "sfx/punch.ogg"
+    play music SchoolCasual fadein (2)
     Hiroya "Oof!" with vpunch
     #show Kaori u shocked p1
 
@@ -80,7 +83,9 @@ label chapter1:
 
     "In the blink of an eye, the girl let out a battle cry, swinging her leg as she turned to face me."
     Hiroya "OOF!"
+    play sound "sfx/punch2.ogg"
     "And pounded it into my exposed gut with the force of a bullet train - I didn't have a second to react."
+    queue sound "sfx/whril.ogg"
     $ ("With her sheer force of impact, I'm flung ten feet into the air. The world was spinning out of control!")
     show sky:
         subpixel True xpos 0.5 ypos 0.5 xanchor 0.5 yanchor 0.5 rotate None
@@ -102,6 +107,7 @@ label chapter1:
     pause (3.2)
     scene white with hpunch
     "Oh, wait, that was me."
+    play sound "sfx/heavy_bag_drop_dirt2.ogg"
     "With a rough landing, I land on my back, gazing up towards the sky with a stunned look."
     #scene black with dissolve
     "I winced, trying to keep the sun out of my eyes. My back arced slightly, throbbing with pain."
@@ -205,12 +211,17 @@ label chapter1:
             "My arm hurts..."
             scene black with fade
 
-    play music Early fadein (1.0)
+    stop music fadeout 1.0
+    play sound "sfx/westminster1.ogg"
+    play music Early fadein (5.0)
+    queue sound "sfx/tstep_tile1.ogg"
     scene hallway 1 with dissolve
     "When I get inside, I go straight to the classroom."
+    play sound "sfx/door_open.ogg"
     "Huh? Why is everyone standing around?"
     "That’s odd. Class definitely should have started by now."
     "Guess I'll see what's going on."
+    play sound "sfx/door_close.ogg"
     scene classroom with wiperight
     "If I didn't know better, I would think it was break time."
     show Akari vhappy p1 u at rightoffset:
@@ -288,6 +299,7 @@ label chapter1:
                         Akari p6 angry2 "Hey! How can you say that over fruit?"
                         hide Akari with dissolve
                         "We spend the next few minutes savoring the sweet fruits laid upon her desk. Normally I would find it a little bit gross, but under the circumstances I decide to ignore that."
+                        play sound "sfx/tablewipe.ogg"
                         "With all the pieces gone, Akari uses the side of her hand to wipe the juice back into her lunchbox."
                         Akari "Ah!"
                         "She holds her now dripping hand into the air, as if surprised that it was now covered in fruit juice."
@@ -302,9 +314,11 @@ label chapter1:
                         Hiroya "No, don't you dare..."
                         hide Akari with hpunch
                         Akari "Hyaa!"
+                        play sound "sfx/syrup_hands_slop.ogg"
                         "She slaps her wet sticky hand across the sleeve of my uniform."
                         Hiroya "Nooo, why! That’s gross, Akari!"
                         Akari "That's what you get for mooching!"
+                        play sound "sfx/door_open.ogg"
                         "A moment later, the door slides open."
                         "???" "Please take a seat, everyone."
                         hide Akari with dissolve
@@ -359,6 +373,7 @@ label chapter1:
                         pause (1)
                         Akari p6 angry2 "Hey! How can you say that over fruit?"
                         hide Akari with dissolve
+                        play sound "sfx/door_open_close.ogg"
                         "???" "Take a seat, everyone."
                         "Crap! She actually showed up!"
                         Hirayama "Sorry for the delay, but break time is over. We have lots to go over today!"
@@ -372,6 +387,7 @@ label chapter1:
                         "She must have noticed the way I was leaning out of my desk. I scoot away and turn towards the window."
                         "Hirayama-sensei comes towards my desk, and then turns towards Akari."
                         Hirayama "What... is this?"
+                        play sound "sfx/tablewipe.ogg"
                         "She wipes her finger across the sticky sweet puddle left behind by the fruit."
                         Akari "Mhff!"
                         "Akari whimpers, her mouth completely stuffed with the fruit panda snack."
@@ -455,7 +471,8 @@ label chapter1:
             Hiroya "I'm sorry..."
             Hiroya "But it was really good. So thanks."
             Akari sad "You are completely hopeless, Hiroya-kun."
-
+            
+            play sound "sfx/door_open.ogg"
             "The door slides open."
             "???" "Please take a seat, everyone."
             hide Akari with dissolve
@@ -496,29 +513,41 @@ label chapter1:
     Hiroya "Um, no."
     Akari "Sorry, I’ll be quiet!"
     "Way to go, Akari, getting me in trouble as usual."
+    play sound "sfx/sms.ogg"
     "*Bzzt*"
     "My phone buzzes."
     "\"So since sensei is back and we can’t talk during class...\""
+    play sound "sfx/sms.ogg"
     "*Bzzt*"
     "Damnit Akari."
     "\"I thought I’d text you!\""
+    play sound "sfx/sms.ogg"
     "*Bzzt*"
     "\"Anyway, wanna come over for dinner with me and Miyu?. We're making curry tonight! Mom said I could invite you over!\""
     "{i}Dinner{/i}"
     "I press the reply button."
     Hiroya "Food? For free? Hell yeah."
     "Aaand sent."
+    $renpy.music.set_volume(0.0, delay=0.2, channel='music')
+    #pause(0.2)
+    play sound "sfx/sms_akari.ogg"
+    pause(1.0)
+    $renpy.music.set_volume(1.0, delay=4.0, channel='music')
     "*BING*"
     Akari "Oops."
     "And of course she would leave her phone on max volume."
     Hirayama "Miyazaki!"
     Akari "I-I’m so sorry!"
     scene black with fade
-    play music Suzukitheme fadein (2.0)
+    stop music fadeout 1.0
+    play sound "sfx/westminster1.ogg"
+    play music Suzukitheme fadein (5.0)
     #Suzuki introduction scene
 
     scene hallway 2 with dissolve
+    play sound "sfx/door_close.ogg"
     "When the lesson ends, I leave the classroom and head downstairs. Akari walks with me until we arrive in the common room for our break period."
+    queue sound "sfx/tstep_tile1.ogg"
     show Akari p2 u happy at center with dissolve:
         xpos .5
     Akari "I’m going to look for Miyu-chan! I need to invite her too."
@@ -530,6 +559,8 @@ label chapter1:
     "If I keep buying these for lunch, I'll run out of money in no time!"
     "Nope, I have to stop that train of thought."
     Hiroya "I’m going to get a job!"
+    play sound "sfx/coindeposit.ogg"
+    queue sound "sfx/vending.ogg"
     "I put the coins in the machine and take my first real meal of the day."
     "I lean up against the wall in my usual spot when..."
     "*THUMP*"
@@ -541,6 +572,7 @@ label chapter1:
     "The way he’s looking at me... is he analyzing me?"
     show Suzuki u p1 questioning with dissolve
     BaseballGuy "Hmm."
+    play sound "sfx/toon_poke.ogg"
     Hiroya "Eh!?"
     Hiroya "Did you just poke my arm?"
     show Suzuki u p1 speaking with dissolve
@@ -578,11 +610,13 @@ label chapter1:
     "BaseballGuy" "Though she did ask me to come and find you. She seems to think we might be able to assist each other, if you'll just hear me out for a sec."
     hide Suzuki with dissolve
     Hiroya "I highly doubt that. We don't know each other and..."
+    play sound "sfx/butcherpaper_short.ogg"
     Hiroya "Wait, is that... roast beef?"
     #Show roast beef
     BaseballGuy "Huh? This?"
     "He raises it up so I can see."
     "A perfect home-made roast beef sandwich. With cheese."
+    play sound "sfx/butcherpaper.ogg"
     "He peels back the paper a little more. "
     "That little bit of fruit and my bean bun, both of them combined don't even compare."
     BaseballGuy "You know, my folks own the cafe across from the library."
@@ -624,6 +658,7 @@ label chapter1:
     Suzuki "A private school, built by one of this town’s oldest and most influential families, was opened our freshmen year."
     Suzuki "For the first year, things were about the same as they had always been."
     Suzuki "But last year, the unthinkable happened."
+    queue sound "sfx/thunderclap.ogg"
     scene CG Shizuka dark with fade
     Suzuki "Shizuka Endo. "
     Hiroya "Hmm? Endo?"
@@ -737,6 +772,7 @@ label chapter1:
     Hojo "*sigh* You could at least pretend to pay attention, Miyazaki."
     Akari "Yes, sensei!"
     "She says that, but I can clearly see her on her phone."
+    play sound "sfx/sms.ogg"
     "*Bzzt*"
     "Of course it’s her. She’s sending me text messages again."
     "\"Back me up on this! Miyu-chan is an introvert! We've got to make sure she becomes friends with her new roommates!\""
@@ -749,6 +785,11 @@ label chapter1:
     menu:
         "Sure, I’ll come over for dinner.":
             "Aaaand sent."
+            $renpy.music.set_volume(0.0, delay=0.2, channel='music')
+            #pause(0.2)
+            play sound "sfx/sms_akari.ogg"
+            pause(1.0)
+            $renpy.music.set_volume(1.0, delay=4.0, channel='music')
             "*BING*"
             "*Snap*"
             "The teacher's chalk breaks against the board."
@@ -781,6 +822,11 @@ label chapter1:
         "Sorry, I already made plans for tonight.":
 
             "Aaaand sent."
+            $renpy.music.set_volume(0.0, delay=0.2, channel='music')
+            #pause(0.2)
+            play sound "sfx/sms_akari.ogg"
+            pause(1.0)
+            $renpy.music.set_volume(1.0, delay=4.0, channel='music')
             "*BING*"
             "*Snap*"
             "The teacher's chalk breaks against the board."
