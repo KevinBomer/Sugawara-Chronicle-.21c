@@ -9,7 +9,7 @@ init:
     $ leftoffset2 = Position(xpos = .15)
     $ rightoffset = Position(xpos = .65)
     $ rightoffset2 = Position(xpos = .85)
-    $ chaptertitlespot = Position(xanchor = 0.5, xpos = 0.8, yalign = 0.95)
+    $ chaptertitlespot = Position(xanchor = 0.0, yanchor = 0.5, xpos = 0.6, yalign = 0.45)
     
     # Character Initialization: These lines represent all the possible sprites you can call up. 
     # When adding new sprites, this is where you define them. If you rename the files, they have to be renamed here too. 

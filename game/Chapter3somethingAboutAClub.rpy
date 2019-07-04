@@ -1073,23 +1073,16 @@ label Chapter3somethingAboutAClub:
 
     "I guess it can't be helped."
     "Hiroya" "*sigh* I should have known. Where theres a bridge, there's bound to be trolls."
-	"The round one" "Oh. Smart guy, huh?"
-    	"Hiroya" "I don't want any trouble."
-
-     	"The tall one" "Well the thing is, we're gonna' have a hard time believing that after that shit you guys pulled on our field the other day."
-
-	"The round one" "How dare you embarrass us in front of Shizuka!"
-	
-	"Oh. That's what this is about. Damn that Suzuki."
-
+    "The round one" "Oh. Smart guy, huh?"
+    "Hiroya" "I don't want any trouble."
+    "The tall one" "Well the thing is, we're gonna' have a hard time believing that after that shit you guys pulled on our field the other day."
+    "The round one" "How dare you embarrass us in front of Shizuka!"
+    "Oh. That's what this is about. Damn that Suzuki."
     "The tall one" "I'd reckon that the whole lot of you deserves some discipline."
-
     Hiroya "I don't have any money. That's why I'm under the bridge, you idiots."
-
     "The round one" "You know what happens to barn animals who step outta line?"
     "The tall one" "They brand 'em, and make an example of them for everyone else."
     Hiroya "Well, I'm glad the boys at Sakura no Ki are learning all about husbandry. Farming's a good vocation."
-
     "The round one" "...what?"
     "The tall one" "...I'm gettin' sick of seeing your dumb face!"
     "The round one" "Let's Teach 'im a lesson."

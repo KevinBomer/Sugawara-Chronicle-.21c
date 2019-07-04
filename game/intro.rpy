@@ -10,6 +10,7 @@ label start:
     "In the most quiet part of the night, I walk up the steps to our dingy two-bedroom apartment."
     #sfx unlocking door, open
     "I pull the door open and step inside."
+    scene apartment night with squares
     Hiroya "I'm back."
     "The smell of smoke hangs heavy in the air. My nose crincles in response."
     "The room is dark. Some commercial plays on the TV in a low volume."

@@ -1,16 +1,21 @@
 label chapter1:
 
     $ camera_reset()
-    play music Chalkboards fadein 2.0
+    play music Chalkboards fadein 1.0
     $ renpy.pause(1, hard=True)
-    show text "Sarchalen Visual Media Presents: " with dissolve
+    show text "Sarchalen Visual Media \n and Watercress Studios Presents: " with dissolve
     $ renpy.pause(2, hard=True)
     scene chapter_screen_1 with fade
+    show logo with Dissolve(.5):
+        xalign .5
+        yalign .6
+        xpos .3
+        ypos .5
+        zoom .8
     $ renpy.pause(1, hard=True)
-    show text "{size=36}Chapter 1. Independence Day" at chaptertitlespot with moveinleft
+    show text "{size=40}{color=#3a47a6}Chapter One \n{size=64}Independence Day" at chaptertitlespot with Dissolve(1.0)
     $ renpy.pause(3, hard=True)
-    scene white with Dissolve(.5)
-    scene sky
+    scene sky with dissolve
 #START TUTTY BLOCK
     Hiroya "Ah-!"
     Hiroya "Hah..."
@@ -52,12 +57,12 @@ label chapter1:
     "Last thing I need in my life is to get whallopped and forced back into my father's two-faced care."
 
     play sound "sfx/tstep_sidewalk2.ogg"
-    scene street day with fade
+    scene street day with dissolve
     "Almost there!"
     "Breathe, breathe..."
     "Aha, yes! The gate is still open!"
     play sound "sfx/tstep_sidewalk2.ogg"
-    scene courtyard empty with fade
+    scene courtyard empty with dissolve
 
     "I don’t see any students standing around outside. The bell must be seconds from ringing!"
     "I have to go faster. My eyes narrow on the far door, the one that would lead to my homeroom class."
