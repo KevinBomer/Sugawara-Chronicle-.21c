@@ -678,7 +678,7 @@ label Chapter3somethingAboutAClub:
             Yukiko "Right, that makes sense."
         "I had a dream.":
             Yukiko speaking questioning "Oh yeah? Anything interesting?"
-            Hiroya "Not interesting, just weird. Some beeping"
+            Hiroya "Not interesting, just weird."
 
         "Why'd you wake me up?":
             Hiroya "Did something happen?"
@@ -1058,28 +1058,26 @@ label Chapter3somethingAboutAClub:
     "Following the familiar bends, I make it back to my bridge."
     "???""Who's there?!"
     "I stop in my tracks. There's two guys across the road lurking near my spot, dressed in all black. Are they police?"
-    "...No. No, I recognize those uniforms."
-
-    "I can't make out much. Theres two of them. A tall  one, and one a bit...rounder."
-                      
+    "...No. No, I recognize those uniforms."''
+    "I can't make out much. Theres two of them. One is sort of tall. The other, sort of round."
     "The round one" "Hey. He's talking to you!"
-    "They're coming over. Slowly, but with menace."
+    "The two guys start walking over. Slowly, but with menace."
+    "As they step into the light I can see them more clearly. It's just as I thought."
+    "They're wearing Sakuranoki uniforms."
+    "Great. Some thugs from our rival school are here to give me a hard time."
+    "Damn that girl."
 
     "The tall one" "We heard there was some chump settin' up out here."
     "The round one" "And whaddya' know. He's from Sugawara too."
-    "The tall one" "Our lucky day."
-
-    "Great. Some thugs from the other school here to give a guy a hard time. I guess even rich kids gotta do something on their off-time."
-
-    "I guess it can't be helped."
+    "The tall one" "Our lucky day.""
     "Hiroya" "*sigh* I should have known. Where theres a bridge, there's bound to be trolls."
     "The round one" "Oh. Smart guy, huh?"
     "Hiroya" "I don't want any trouble."
     "The tall one" "Well the thing is, we're gonna' have a hard time believing that after that shit you guys pulled on our field the other day."
     "The round one" "How dare you embarrass us in front of Shizuka!"
-    "Oh. That's what this is about. Damn that Suzuki."
+    "Oh. That's what this is about. The baseball guy from the other day. Damn both of them."
     "The tall one" "I'd reckon that the whole lot of you deserves some discipline."
-    Hiroya "I don't have any money. That's why I'm under the bridge, you idiots."
+    Hiroya "Look, if you're here to mug me or whatever, I don't have any money."
     "The round one" "You know what happens to barn animals who step outta line?"
     "The tall one" "They brand 'em, and make an example of them for everyone else."
     Hiroya "Well, I'm glad the boys at Sakura no Ki are learning all about husbandry. Farming's a good vocation."
@@ -1087,8 +1085,9 @@ label Chapter3somethingAboutAClub:
     "The tall one" "...I'm gettin' sick of seeing your dumb face!"
     "The round one" "Let's Teach 'im a lesson."
     "The bigger of the two clenched his fist so tightly I could hear his knuckles crack. This wasn't good, but I had nowhere else to run."
-    "I raise my fists defensively as the big guy readies a hook."
-    "With a quick jab, I aim for his exposed gut."
+    "I guess it can't be helped."
+    "I raise my fists defensively as the big guy comes at me with a hook."
+    "I go low, aiming for his exposed gut."
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
         parallel:
@@ -1110,95 +1109,68 @@ label Chapter3somethingAboutAClub:
             zoom 1
             linear 0.1 zoom 1.05
             linear 0.1 zoom 1.0
-    "The smaller guy tackles me from the side, bowling me over to the ground."
-    "A low center of gravity. The curse of being tall."
+    "Not to be left out, the round guy tackles me from the side, bowling me over to the ground"
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
         parallel:
             zoom 1
             linear 0.1 zoom 1.05
             linear 0.1 zoom 1.0
-    "With a kick, I manage to kick the little runt off, before glancing up to see the big guy about to hit me."
-    "Just in time, I'm able to roll aside, and he hits the pavement."
-    "Bouncing to my feet, I'm ready for more. The other two stagger to their feet, their fists at the ready."
-    "The round one" "You're in some hot shit now! Now you pissed us off!"
-    "Now they both rushed in. I could've tried to fend off one or the other, but now they were both throwing hooks, jabs, and cheap shots."
-    show bridge sidewalk night onlayer master:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
-        parallel:
-            zoom 1
-            linear 0.1 zoom 1.05
-            linear 0.1 zoom 1.0
-            linear 0.1 zoom 1.05
-            linear 0.1 zoom 1.0
-    "I tried to block against the onslaught as best I could, but I was outnumbered. The best I could do was try for a counter."
-    "I pay attention to the bigger guy with the slow wind-ups and the slower reactions. He was pulling his fist back to try to break through my defenses."
-    "But, sacrificing power for speed, I sent my fist into his jaw before he could hit me."
-    show bridge sidewalk night onlayer master:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
-        parallel:
-            zoom 1
-            linear 0.1 zoom 1.05
-            linear 0.1 zoom 1.0
-    "The tall one" "Nngh..."
-    "He staggers back, putting a hand over his cheek."
+    "I wrestle with him for a short moment. I almost get him in a hold. He slips out and pushes me back down to the pavement."
+    "I bounce back to my feet. The tall one is holding his stomach, still reeling from my first hit."
     Hiroya "Oh no. Did a little punch like that really hurt? I had expected better from students of the prestigious Sakura no Ki."
-    "The round one" "Tch. We were only gonna leave you with a few bruises, but now you really did it."
+    "The tall one" "Tch. We were only gonna leave you with a few bruises, but now you really did it."
     "He reached into his pocket and pulled out something I didn't quite recognize."
     "It was only when I heard the tell-tale sound of a spring-loaded mechanism that I realized he had pulled out a switchblade."
-    Hiroya "...What? Are you really sure you wanna do this?"
-    "The round one" "I'm not gonna kill ya. I just wanna make sure you remember us{i}bleed{/i}."
-    Hiroya "Oh, lucky me."
     "This is really bad."
     "Maybe I should cut my losses and run."
     "I back up a bit, trying to put some distance between me and these thugs."
-    "But I feel something hard press against my lower back. My face goes pale; was I surrounded?"
-    "I slowly turn my head to look behind me. I'm not met with another hooligan, thankfully."
+    "But I feel something hard press against my lower back."
+    "I turn my head to look behind me. I'm not met with another hooligan, thankfully."
     "Just a guard rail overseeing the river. And it was quite a drop."
-    "So, as it turns out, I'm only surrounded on one side. And the other side isn't too good either."
     "The tall one" "Heheh. Now I got you."
-    "The round one" "Squeal like a pig for me. Nobody's comin' to save you."
+    "The round one" "Squeal like a pig for us. Nobody's comin' to save you."
     Hiroya "...?"
-    "I stare into the shimmering water below. I thought I saw something in the water, but... no, it has to be a trick of the moonlight."
-    "I squint my eyes, trying to get a better look."
-    "...No. That's not the moonlight. Something's... in the water. Some kind of light."
-    The round one "C'mon now, look me in the eye when I'm talking to you!"
-    Hiroya "...Huh?"
+    "I look down over the railing at the dark water down below."
+    "Just for an instant I thought I saw something in the water."
+    "No, it has to be a trick of the moonlight."
+    "The guy with the knife comes closer to me."
+    "I can't help but look again, back over the rail"
+    "The round one" "Hey! Look me in the eye when I'm killing you!"
+    Hiroya "Something's... in the water. Some kind of light."
     "The light stirs back and forth as I watch it. Suddenly, it stops. I don't understand."
     "So what's this I'm seeing? Am I going crazy?"
-    The tall one "Are you screwing with me, punk!? Show some respect, you little shit-"
+    The tall one "Are you screwing with me, punk!? Are you stupid or something?!"
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
         parallel:
             zoom 1
             linear 0.1 zoom 1.25
     "The guy with the knife grabs my collar, and forces my attention back to him."
-    The round one "I'm done playing games with you! Maybe I'll throw you down there too if it's so interestin', huh!?"
-
+    "The round one" "Maybe I'll throw you down there too if it's so interestin', huh!?"
     #sfx
-    "Behind me, there was a splash. It sounded as if somebody had dived into the pool, but..."
-    "I glance my head in both directions to do a brief headcount. Still two thugs."
-    The tall one "...Hey, you hear that? Someone's here."
-    The round one "Tch. Then I guess we better work quickly then-"
+    "Behind me, there was a splash. It sounded as if somebody had dived into the river, but..."
+    "The tall one" "...What the fuck is that?!"
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
         parallel:
             zoom 1.25
             linear 0.1 zoom 1.0
     #sfx whoosh
-    "A silvery light cut between the thug and I, pushing the guy with the knife further back."
-    "Losing the grip on his knife, he staggered back, his hand twitching."
-    The round one "What!? Dude what was that!?"
+    "I can feel a bright flash of light behind me."
+    "Losing the grip on my shirt, the round one staggered back."
+    The round one "What!? Shit get away from it!"
     The tall one "L-look!"
-    Hiroya "...What??"
-    "My eyes look over to see a silvery, translucent essence standing still. It simply stood there, a formless mass illuminated by an otherworldly glow."
-    "It constantly quivers, and moves on its own. The trunk of the mass shifts, giving it some kind of form."
+    "I turn my head and I see it. But what...is it?"
+    "A translucent essence floating still over the water. A formless mass of a silvery sort of liquid, surrounded in a beam of otherworldly white light."
+    "It quivers and shifts, giving it some kind of form."
     "The longer I stare, the more I'm convincing myself that it looks, ever so vaguely... humanoid. And more humanoid by the second."
     Hiroya "What is that?"
     The tall one "It's an alien!"
     The round one "...You serious, dude? Let's just-"
-    "The silvery mass jerks forward, its body moving like water, at the two thugs, starstruck by its presence."
-    "Reacting, they raise their fists to their head."
+    "The thing rushes forward, fluid, as if it were made from the water itself."
+    "It flys over my head, not at me, but at my attackers from Sakuranoki."
+    "Reacting, they raise their fists"
     The round one "Get it! Just grab it and hold it! I'll get my knife and slit its throat, wherever the hell it is!"
     The tall one "O-okay!"
     "The bigger guy lurched forward, his arms reaching out for a bear hug."
