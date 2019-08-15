@@ -1069,7 +1069,7 @@ label Chapter3somethingAboutAClub:
 
     "The tall one" "We heard there was some chump settin' up out here."
     "The round one" "And whaddya' know. He's from Sugawara too."
-    "The tall one" "Our lucky day.""
+    "The tall one" "Our lucky day."
     "Hiroya" "*sigh* I should have known. Where theres a bridge, there's bound to be trolls."
     "The round one" "Oh. Smart guy, huh?"
     "Hiroya" "I don't want any trouble."
