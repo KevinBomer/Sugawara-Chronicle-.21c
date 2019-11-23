@@ -324,7 +324,7 @@ screen navigation():
 
             ## Help isn't necessary or relevant to mobile devices.
             textbutton _("Help") action ShowMenu("help")
-
+            # Under Construction: textbutton _("Update") action updater.Update(url=UPDATE_URL, base=None, force=False, public_key=None, simulate=True, add=[], restart=True)
             ## The quit button is banned on iOS and unnecessary on Android.
             textbutton _("Quit") action Quit(confirm=not main_menu)
 

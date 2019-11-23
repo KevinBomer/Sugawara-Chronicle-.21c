@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapter1.rpy", line 771: expected statement.
-    Suzuki:
-          ^
+File "game/chapter1.rpy", line 3: expected statement.
+    dissolve = Dissolve(.25)
+             ^
 
-Ren'Py Version: Ren'Py 6.99.13.2919
+Ren'Py Version: Ren'Py 7.3.5.606
+Sat Oct 26 20:32:25 2019

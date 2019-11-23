@@ -108,9 +108,11 @@ label start:
     Dad "I'll just leave you with this."
     "The last thing I see is his scarred knuckles making a beeline towards my face."
     "I close my eyes tight and brace for the impact."
-    #sfx punch
-    scene black with dissolve
+    scene black with vpunch
+    play sound "sfx/heavy_bag_drop_dirt2.ogg"
+
+    
     stop music fadeout 2.0
-    $ renpy.pause (4, hard = True)
+    $ renpy.pause (3, hard = True)
 
     jump chapter1
