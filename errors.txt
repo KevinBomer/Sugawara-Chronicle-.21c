@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapter1.rpy", line 3: expected statement.
-    dissolve = Dissolve(.25)
+File "game/init.rpy", line 425: expected statement.
+    dissolve = Dissolve(0.2)
              ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Oct 26 20:32:25 2019
+Mon May 11 23:52:13 2020

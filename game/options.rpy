@@ -151,12 +151,12 @@ define config.window_icon = "gui/window_icon.png"
 
 init python:
     ## Layers #################################################################
-    ## Defines which layers exist in Renpy. All displayables must exist on a layer. Background, Middle, and Forward are custom. 
+    ## Defines which layers exist in Renpy. All displayables must exist on a layer. Background, Middle, and Forward are custom.
 
     config.layers = ['master', 'background', 'middle', 'forward', 'transient', 'screens', 'overlay']
-    
+
     register_3d_layer('background', 'middle', 'forward')
-    #These layers will be registered as 3D layers, allowing their Z axis to be affected inside the 3D Camera interface. 
+    #These layers will be registered as 3D layers, allowing their Z axis to be affected inside the 3D Camera interface.
 
     config.debug_sound = True
     ## The following functions take file patterns. File patterns are case-

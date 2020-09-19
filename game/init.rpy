@@ -10,10 +10,10 @@ init:
     $ rightoffset = Position(xpos = .65)
     $ rightoffset2 = Position(xpos = .85)
     $ chaptertitlespot = Position(xanchor = 0.0, yanchor = 0.5, xpos = 0.6, yalign = 0.45)
-    
-    # Character Initialization: These lines represent all the possible sprites you can call up. 
-    # When adding new sprites, this is where you define them. If you rename the files, they have to be renamed here too. 
-    # The "Color" value lets you choose a six hexadecimal color code for each character's name. 
+
+    # Character Initialization: These lines represent all the possible sprites you can call up.
+    # When adding new sprites, this is where you define them. If you rename the files, they have to be renamed here too.
+    # The "Color" value lets you choose a six hexadecimal color code for each character's name.
 
     #Main Character Definitions:
     define Akari = Character("Akari Miyazaki", image = "Akari",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
@@ -25,7 +25,7 @@ init:
     define Izumi = Character("Izumi Mizuno", image = "Izumi",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
     define Hiroya = Character("Hiroya Tachibana", image = "Hiroya",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
 
-    ##These are side characters who don't have images. They don't technically need to be defined but it'll auto add quotes this way. 
+    ##These are side characters who don't have images. They don't technically need to be defined but it'll auto add quotes this way.
     define Dad = Character("Dad",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
     define Hojo = Character("Hojo-sensei",who_color ="ffffff", what_prefix = '"' , what_suffix = '"')
     define Hirayama = Character("Hirayama-sensei",who_color ="ffffff", what_prefix = '"' , what_suffix = '"')
@@ -36,7 +36,7 @@ init:
     define Juichi = Character("Juichi",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
     define snk1 = Character("Sakura no Ki Student 1",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
     define snk2 = Character("Sakura no Ki Student 2",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
-    
+
 
 
     #Example of a night time character tint:
@@ -213,7 +213,7 @@ init:
 
     #Shizuka Sprites:
     image Shizuka u neutral = "sprites/Shizuka/uniform/Shizuka u neutral.png"
-    image Shizuka u happy = "sprites/Shizuka/uniform/Shizuka u happy.png"  
+    image Shizuka u happy = "sprites/Shizuka/uniform/Shizuka u happy.png"
     image Shizuka u speaking = "sprites/Shizuka/uniform/Shizuka u speaking.png"
     image Shizuka u mad = "sprites/Shizuka/uniform/Shizuka u mad.png"
     image Shizuka u questioning = "sprites/Shizuka/uniform/Shizuka u questioning.png"
@@ -384,7 +384,7 @@ init:
     image sarchalenlogo = "sarchalenlogo.png"
     image pilogo = "pilogo.png"
     image wclogo = "wclogo.png"
-    
+
     #CG Initialization:
     image CG Akari fruit happy = "CGs/CG Akari Fruit Happy.png"
     image CG Akari fruit annoyed = "CGs/CG Akari fruit annoyed.png"
@@ -411,16 +411,19 @@ init:
             easein 1.0 alpha 1.0
         parallel:
             easein 1.0 xalign 0.5
-        on hide:            
+        on hide:
             alpha 1 zoom 1 xanchor 0.5 yanchor 0.5
             block:
                 linear 0.1 zoom 1.1
                 linear 0.5 zoom 0
-                
+
     transform bounce:
         yoffset 15
         easein .10 yoffset 0
         easeout .175 yoffset 15
+#Changes the default "dissolve" speed from .5 to .2
+define dissolve = Dissolve(0.3)
+
 
 define config.say_attribute_transition = dissolve
 
@@ -429,7 +432,7 @@ label splashscreen:
     $ renpy.music.play(config.main_menu_music)
     scene black
     show sky night onlayer master:
-        subpixel True xpos 0.4 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 1.55 rotate None 
+        subpixel True xpos 0.4 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 1.55 rotate None
         parallel:
             xpos 0.5
             linear 14 xpos 0.7
@@ -459,7 +462,7 @@ label splashscreen:
     hide pilogo with dissolve
     $ renpy.pause(.5, hard=True)
     jump update
-    
+
 label update:
     $ UPDATE_URL = "http://sarchalen.com/sugawarachronicle/update/update.json"
     $ new_version = updater.UpdateVersion(url=UPDATE_URL, simulate=None)
