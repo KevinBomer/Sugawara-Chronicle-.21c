@@ -310,7 +310,7 @@ label chapter1:
     Kaori shout"I-it's the sentiment that counts! What, is it not enough encouragement for you!?"
 
     Hiroya "Can I go to class now?"
-    
+
     Kaori p1 frustrated "I guess."
 
     Hiroya "Alright then. I'll just be on my way then."
@@ -391,10 +391,10 @@ label chapter1:
     scene classroom with wiperight
     "If I didn't know better, I would think it was break time."
     show Akari vhappy p1 u onlayer master:
-        subpixel True xpos 0.5 ypos 1 xanchor 0.5 yanchor 0.0 yoffset 0.0 xzoom -1.0 zoom 1.2 rotate None 
+        subpixel True xpos 0.5 ypos 1 xanchor 0.5 yanchor 0.0 yoffset 0.0 xzoom -1.0 zoom 1.2 rotate None
         xflip
         bounce
- 
+
     Akari "Oh you're here! Good Morning, Hiroya!"
 
     Hiroya "Oh, hey Akari."
@@ -465,7 +465,7 @@ label chapter1:
 
     Akari "Well you got lucky this time. Hirayama-sensei is late too!"
 
-    Hiroya "So that's why class hasn't started." 
+    Hiroya "So that's why class hasn't started."
 
     Akari "Hm. I guess so. And you weren't here so I guess I got kinda bored?"
 
@@ -760,14 +760,15 @@ label chapter1:
     "And of course she would leave her phone on max volume."
     Hirayama "Miyazaki!"
     Akari "I-I’m so sorry!"
-    scene black with fade
     stop music fadeout 1.0
     play sound "sfx/westminster1.ogg"
-    play music Suzukitheme fadein (5.0)
-    #Suzuki introduction scene
-
-    scene hallway 2 with dissolve
+    pause (1.5)
+    scene hallway 1 empty with wiperight
+    pause (2.0)
     play sound "sfx/door_close.ogg"
+    #Suzuki introduction scene
+    play music Suzukitheme fadein (5.0)
+    scene hallway 2 with wipeleft
     "When the lesson ends, I leave the classroom and head downstairs. Akari walks with me until we arrive in the common room for our break period."
     queue sound "sfx/tstep_tile1.ogg"
     show Akari p2 u happy at center with dissolve:
@@ -785,10 +786,10 @@ label chapter1:
     queue sound "sfx/vending.ogg"
     "I put the coins in the machine and take my first real meal of the day."
     "I lean up against the wall in my usual spot when..."
-    "*THUMP*"
+    "*THUMP*" with vpunch
+    show Suzuki u p1 tough with dissolve
     "Hmm...?"
     "A guy props himself against the wall in front of me. A member of the baseball team if I recall correctly."
-    show Suzuki u p1 tough with dissolve
     BaseballGuy "Hey, Tachibana! You’re pretty tough, right?"
     Hiroya "Hmm? What?"
     "The way he’s looking at me... is he analyzing me?"
@@ -818,7 +819,7 @@ label chapter1:
     BaseballGuy "Anyway, Kaori-chan told me to come and find you. She seems to think you could be useful to us."
     "Kaori. The girl I ran into this morning."
     Hiroya "Not interested."
-    show Suzuki u p2 shouting with dissolve
+    show Suzuki u p2 shouting with vpunch
     BaseballGuy "How can you even say that without hearing our proposition?"
 
     Hiroya "Let me guess. Kaori Chiba told you that I'm not in any clubs. You've come to recruit me to the baseball team."

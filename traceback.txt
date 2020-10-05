@@ -1,21 +1,27 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/chapter1.rpy", line 769, in script
-    scene hallway 2 with dissolve
+  File "game/chapter1.rpy", line 775, in script
+    Akari "I’m going to look for Miyu-chan! I need to invite her too."
 IOError: Couldn't find file 'music/Suzukitheme.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapter1.rpy", line 769, in script
-    scene hallway 2 with dissolve
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 1389, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\exports.py", line 1601, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\display\core.py", line 2251, in do_with
-    clear=clear)
+  File "game/chapter1.rpy", line 775, in script
+    Akari "I’m going to look for Miyu-chan! I need to invite her too."
+  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\character.py", line 842, in do_display
+    **display_args)
+  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
   File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\display\core.py", line 3380, in interact_core
@@ -37,4 +43,4 @@ IOError: Couldn't find file 'music/Suzukitheme.mp3'.
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 Sugawara Chronicle 0.21c
-Fri Aug 14 23:18:41 2020
+Mon Oct 05 00:16:48 2020

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/init.rpy", line 425: expected statement.
-    dissolve = Dissolve(0.2)
-             ^
+File "game/chapter1.rpy", line 766: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    play sound "sfx/door_close.ogg"
+               ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon May 11 23:52:13 2020
+Mon Oct 05 00:21:50 2020

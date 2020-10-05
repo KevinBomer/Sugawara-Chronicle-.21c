@@ -346,7 +346,7 @@ init:
     define audio.izumitheme = "music/izumitheme.mp3"
     define audio.frozendream = "music/frozendream.mp3"
     define audio.Kaoritheme = "music/Kaoritheme.mp3"
-    define audio.Suzukitheme = "music/Suzukitheme.mp3"
+    define audio.Suzukitheme = "music/baseballguy.mp3"
     define audio.SchoolCasual = "music/School Casual.mp3"
     define audio.Chalkboards = "music/Chalkboards.mp3"
     define audio.SugarMorning = "music/Sugar Morning.mp3"
