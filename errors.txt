@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapter1.rpy", line 766: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    play sound "sfx/door_close.ogg"
-               ^
+File "game/chapter2-dinnerAtAkaris.rpy", line 131: expected 'comma or end of line' not found.
+    behind Akari
+    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Oct 05 00:21:50 2020
+Mon Oct 05 22:42:30 2020

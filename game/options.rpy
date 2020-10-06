@@ -28,7 +28,7 @@ define config.version = "0.21c"
 ## between paragraphs, write \n\n.
 
 
-define gui.about = _("A Product of Sarchalen Visual Media © 2018\n\nWriters: Monochrome, Shake n'Bake, Tutty_the_Fruity, Kevin Bomer' \n Lead Artist: SandraDev \n Character Art: Kurisu-kun, Erezu-kun \n Backgrounds: Erezu-kun \n Music: Alyx , CrysetBase \nSFX: Able Kirby \n UI Design: ds-sans \n Scripting & Programming: Gabriel Misajlovski \n Editor: Wolf \n Concept: Kevin Bomer" )
+define gui.about = _("A Product of Sarchalen Visual Media\n\nWriters: Monochrome, Shake n'Bake, Tutty_the_Fruity, Kevin Bomer\nLead Artist: SandraDev\nCharacter Art: Kurisu-kun, Erezu-kun\nBackgrounds: Erezu-kun\nMusic: Alyx , CrysetBase\nSFX: Able Kirby\nUI Design: ds-sans\nScripting & Programming: Gabriel Misajlovski\nEditor: Wolf\nConcept: Kevin Bomer\n\n© 2018 Sarchalen Visual Media All Rights Reserved")
 
 
 ## A short name for the game used for executables and directories in the built

@@ -275,7 +275,8 @@ label Chapter3somethingAboutAClub:
     "Yukiko's scheming expression aside, Akari and I head over to her."
 
 
-    show Akari u vhappy p3 flip onlayer master:
+    show Akari u vhappy p3 onlayer master:
+        xflip
         subpixel True xpos 0.65 ypos 1.0 xanchor 0.5 yanchor 1.0 xzoom -1.0 rotate None
         parallel:
             xpos 1.22
@@ -296,12 +297,15 @@ label Chapter3somethingAboutAClub:
             easein_cubic 1.0 xoffset 0
     Akari "Heeeyyy! Yukikooo!"
 
-    show Yukiko u smile happy p1 flip onlayer master:
+    show Yukiko u smile happy p1 onlayer master:
+        xflip
         subpixel True xpos 0.35 ypos 1.0 xanchor 0.5 yanchor 1.0 xzoom -1.0 rotate None
     Yukiko "Mm? Oh, hey guys!"
     Hiroya "Long time no see."
-    show Akari u confident p1 flip
-    show Yukiko u smile sweet p1 flip
+    show Akari u confident p1:
+        xflip
+    show Yukiko u smile sweet p1:
+        xflip
     "We take our seats on opposite sides of her. Yukiko has a thermos nearby, along with a plateful of curried rice. I recognized it from dinner last night."
     "It was quite fragrant. Doubly so when Akari unpacked her own lunch - the same curried rice."
     "I should've thought to ask for a share, but it's not like I have a good way to store it anymore. Damn."
@@ -311,7 +315,9 @@ label Chapter3somethingAboutAClub:
     Yukiko speaking questioning "We aren't sisters, though?"
     Hiroya "Where {i}is{/i} your sister anyway? Izumi?"
     Yukiko frown p2  "Oh, she's staying home again."
-    show Akari u nervous p4 flip with dissolve
+    show Akari u nervous p4:
+        xflip
+        dissolve
     "Yukiko's cheerful face turned morose. A look of mild concern flashed over Akari's face."
     Akari "She didn't come after all? Is she still in her room?"
     Yukiko speaking annoyed p1 "Where else would she be? She just spends all day in there anyway."
@@ -1094,7 +1100,7 @@ label Chapter3somethingAboutAClub:
             zoom 1
             linear 0.1 zoom 1.05
             linear 0.1 zoom 1.0
-    The tall one "Oof!"
+    "The tall one" "Oof!"
     "He keels forward, wincing and glares at me. I go for another hit while he's flinching."
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
@@ -1102,7 +1108,7 @@ label Chapter3somethingAboutAClub:
             zoom 1
             linear 0.1 zoom 1.05
             linear 0.1 zoom 1.0
-    The round one "C'mon!"
+    "The round one" "C'mon!"
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
         parallel:
@@ -1140,7 +1146,7 @@ label Chapter3somethingAboutAClub:
     Hiroya "Something's... in the water. Some kind of light."
     "The light stirs back and forth as I watch it. Suddenly, it stops. I don't understand."
     "So what's this I'm seeing? Am I going crazy?"
-    The tall one "Are you screwing with me, punk!? Are you stupid or something?!"
+    "The tall one" "Are you screwing with me, punk!? Are you stupid or something?!"
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
         parallel:
@@ -1159,23 +1165,23 @@ label Chapter3somethingAboutAClub:
     #sfx whoosh
     "I can feel a bright flash of light behind me."
     "Losing the grip on my shirt, the round one staggered back."
-    The round one "What!? Shit get away from it!"
-    The tall one "L-look!"
+    "The round one" "What!? Shit get away from it!"
+    "The tall one" "L-look!"
     "I turn my head and I see it. But what...is it?"
     "A translucent essence floating still over the water. A formless mass of a silvery sort of liquid, surrounded in a beam of otherworldly white light."
     "It quivers and shifts, giving it some kind of form."
     "The longer I stare, the more I'm convincing myself that it looks, ever so vaguely... humanoid. And more humanoid by the second."
     Hiroya "What is that?"
-    The tall one "It's an alien!"
-    The round one "...You serious, dude? Let's just-"
+    "The tall one" "It's an alien!"
+    "The round one" "...You serious, dude? Let's just-"
     "The thing rushes forward, fluid, as if it were made from the water itself."
     "It flys over my head, not at me, but at my attackers from Sakuranoki."
     "Reacting, they raise their fists"
-    The round one "Get it! Just grab it and hold it! I'll get my knife and slit its throat, wherever the hell it is!"
-    The tall one "O-okay!"
+    "The round one" "Get it! Just grab it and hold it! I'll get my knife and slit its throat, wherever the hell it is!"
+    "The tall one" "O-okay!"
     "The bigger guy lurched forward, his arms reaching out for a bear hug."
     "...But his arms simply slipped right through it."
-    The tall one "...Huh?"
+    "The tall one" "...Huh?"
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
         parallel:
@@ -1183,10 +1189,10 @@ label Chapter3somethingAboutAClub:
             linear 0.1 zoom 1.05
             linear 0.1 zoom 1.0
     #sfx slash
-    The tall one "Ahh! My back!"
+    "The tall one" "Ahh! My back!"
     "Invisible to the eye, some part of the silvery mass rapidly descended upon his back, causing him to collapse to the ground."
     "He scrambled forward, and stood back up."
-    The round one "What're you doing!? Just grab it!"
+    "The round one" "What're you doing!? Just grab it!"
     "The bigger guy went forward again."
     show bridge sidewalk night onlayer master:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
@@ -1205,17 +1211,17 @@ label Chapter3somethingAboutAClub:
             linear 0.1 zoom 1.05
             linear 0.1 zoom 1.0
     #sfx slash
-    The tall one "OOF! M-my back!"
-    The round one "Grr... got it!"
+    "The tall one" "OOF! M-my back!"
+    "The round one" "Grr... got it!"
     "By the time the smaller guy clamored for his knife, his bigger buddy had been bested, sprawled onto the ground. Realizing this, the smaller guy's face turned pale."
-    The round one "What the hell is... damn it!"
+    "The round one" "What the hell is... damn it!"
     "His exclamations were left to the corner of my eye. I had been gazing at the ghostly form for some time in awe."
     "And I thought I could make out a human. ...No, I definitely did."
     "It was a girl. She was garbed in a wispy white nightgown, clutching a sword. It was still sheathed, holding it above the larger man that had collapsed to the ground."
     "Her hair was a pale, ivory white, moving on its own as if lifted by the wind. Her eyes had a sharp gaze, punctuated by her red irises."
     "She looked over to me, and our eyes met. Her eyes widened upon looking at me, concern washing over her face."
     "...I could see my reflection in them. And I could see the shorter man had grabbed my side in my dazed confusion, holding a knife up against my stomach."
-    The round one "Alright, you spooky ghost alien {i}thing!{/i} One more move and this guy's guts are going all over the pavement!"
+    "The round one" "Alright, you spooky ghost alien {i}thing!{/i} One more move and this guy's guts are going all over the pavement!"
     "She scowled silently, lowering her body into a combat stance. My eyes widened, not sure what she was thinking."
     "Her hand tightened against the grip of her katana. My eyes stared at it with growing concern."
     Hiroya "Wait, don't-"

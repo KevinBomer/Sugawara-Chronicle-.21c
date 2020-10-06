@@ -1,8 +1,9 @@
 init:
     #Text outlines
-    $ style.say_thought.outlines = [(1, "000000", 0, 0), (1, "#202020", 0, 0)]
-    $ style.say_dialogue.outlines = [(1, "000000", 0, 0), (1, "#202020", 0, 0)]
-    $ style.pref_label_text.outlines = [(0.2, "000000", 0, 0), (1, "#202020", 0, 0)]
+    $ style.say_default.outlines = [(1, "000000", 0, 0), (1, "#202020", 1, 1)]
+    $ style.say_thought.outlines = [(1, "000000", 0, 0), (1, "#202020", 1, 1)]
+    $ style.say_dialogue.outlines = [(1, "000000", 0, 0), (1, "#202020", 1, 1)]
+    $ style.pref_label_text.outlines = [(1, "000000", 0, 0), (1, "#202020", 1, 1)]
 
 
     $ leftoffset = Position(xpos = .35)
@@ -34,8 +35,8 @@ init:
     define Aoi = Character("Aoi",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
     define Touma = Character("Touma",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
     define Juichi = Character("Juichi",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
-    define snk1 = Character("Sakura no Ki Student 1",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
-    define snk2 = Character("Sakura no Ki Student 2",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
+    define Tall = Character("The tall one",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
+    define Round = Character("The round one",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
 
 
 
@@ -441,7 +442,7 @@ label splashscreen:
             linear 2 alpha 1.0
     #$ renpy.pause(2.0, hard = True)
     show sarchalenlogo at center with Dissolve(1.0):
-        zoom 0.5
+        zoom 0.35
         yanchor .5
         ypos .5
     $ renpy.pause(2, hard=True)
@@ -452,14 +453,6 @@ label splashscreen:
         ypos .5
     $ renpy.pause(1.5, hard=True)
     hide wclogo with Dissolve (1.0)
-    show pilogo at center with Dissolve(1.0):
-        zoom .10
-        yanchor .5
-        xanchor .5
-        ypos .5
-        xpos .5
-    $renpy.pause(1, hard = True)
-    hide pilogo with dissolve
     $ renpy.pause(.5, hard=True)
     jump update
 

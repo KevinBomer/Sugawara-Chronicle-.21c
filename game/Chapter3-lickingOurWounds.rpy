@@ -294,7 +294,7 @@ label ordered:
     Shizuka "I only wanted to come by and give my regards. It was a good game."
     Shizuka happy "A good exercise between our two schools."
     Kaori u shout p2 "'A good exercise!?' Maybe for stroking your inflated ego, maybe!"
-    show Shizuka u mad 1 with dissolve
+    show Shizuka u mad with dissolve
     "Shizuka visibly grimaced at Kaori's objection. It was only for a second, but she looked hurt."
     Shizuka neutral "Still, she recovered quickly. Remarkably so."
     Show Shizuka speaking "I see you guys are busy, so that's all I had to say."
@@ -401,7 +401,7 @@ label ch3Suzuki:
     "Walking back to Kaori's table, I took my seat again across from her."
     "She still looked deep in thought, and I determine this wasn't the best time to bug her. Silence is golden, after all."
     Yukiko c smile vhappy "FOOOOOOD'S READY~"
-    show Yukiko c smile eyesclosed very happy onlayer master:
+    show Yukiko c smile eyesclosed onlayer master:
         subpixel True xpos 0.15 ypos 1.0 xanchor 0.2 yanchor 1.0 rotate None
         parallel:
             xpos 1.15
@@ -449,7 +449,7 @@ label ch3Night:
     "Kaori merely huffed a sigh in response. She looked miffed, but at the same time, much too tired to actually act on it."
     Hiroya "I don't know why you're so happy about this, Suzuki. Don't you have to help clean up?"
     Suzuki bb shouting p1 "..."
-    show Kaori u wink p2 2 with dissolve
+    show Kaori u wink p2 with dissolve
     hide Suzuki with easeoutright
     Suzuki "GOTTAGOSEEYOUGUYSTOMORROW!"
     "He hollered, sprinting back into the restaurant."
@@ -741,7 +741,7 @@ label ch3Night:
     Suzuki frown "Naw man, I get it. I'll keep quiet. Just don't make a mess of things."
     Suzuki "C'mon in. Think I got a spare futon somewhere."
 
-    scene cafe inside night with dissolve
+    scene cafe inside with dissolve
     show Suzuki bb speaking p1 with dissolve
     "Suzuki pulled me inside, relocking the door behind me. It was already dark inside, as if everyone else had gone to bed."
     Hiroya "Does everyone in your house go to bed so early? It's only 11."

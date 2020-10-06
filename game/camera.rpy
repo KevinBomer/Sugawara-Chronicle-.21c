@@ -321,7 +321,7 @@ init -1600 python:
         # layer_check_points = (layer_z, duration, warper)
         from math import sin, pi
         from random import random
-        tran.xpos    = .5 
+        tran.xpos    = .5
         tran.ypos    = .5
         tran.subpixel = subpixel
         tran.transform_anchor = True
@@ -555,7 +555,7 @@ transform _delay_show(time):
 
 screen _rot(): #show rule of thirds
     for i in range(1, 3):
-        add Solid("#F00", xsize=config.screen_width, ysize=1, ypos=config.screen_height*i/3) 
+        add Solid("#F00", xsize=config.screen_width, ysize=1, ypos=config.screen_height*i/3)
         add Solid("#F00", xsize=1, ysize=config.screen_height, xpos=config.screen_width*i/3)
 
 screen _warper_selecter(default=""):
@@ -582,14 +582,14 @@ screen _warper_selecter(default=""):
             textbutton _("close") action Return("")
 
 screen _warper_graph(warper="linear", t=120, length=300, xpos=config.screen_width-400, ypos=300):
-    # add Solid("#000", xsize=3, ysize=1.236*length, xpos=xpos+length/2, ypos=length/2+xpos, rotate=45, anchor=(.5, .5)) 
-    add Solid("#CCC", xsize=length, ysize=length, xpos=xpos, ypos=ypos ) 
-    add Solid("#000", xsize=length, ysize=3, xpos=xpos, ypos=length+ypos ) 
-    add Solid("#000", xsize=length, ysize=3, xpos=xpos, ypos=ypos ) 
+    # add Solid("#000", xsize=3, ysize=1.236*length, xpos=xpos+length/2, ypos=length/2+xpos, rotate=45, anchor=(.5, .5))
+    add Solid("#CCC", xsize=length, ysize=length, xpos=xpos, ypos=ypos )
+    add Solid("#000", xsize=length, ysize=3, xpos=xpos, ypos=length+ypos )
+    add Solid("#000", xsize=length, ysize=3, xpos=xpos, ypos=ypos )
     add Solid("#000", xsize=3, ysize=length, xpos=xpos+length, ypos=ypos)
     add Solid("#000", xsize=3, ysize=length, xpos=xpos, ypos=ypos)
     for i in range(1, t):
-        add Solid("#000", xsize=length/t, ysize=int(length*renpy.atl.warpers[warper](i/float(t))), xpos=xpos+i*length/t, ypos=length+ypos, yanchor=1.) 
+        add Solid("#000", xsize=length/t, ysize=int(length*renpy.atl.warpers[warper](i/float(t))), xpos=xpos+i*length/t, ypos=length+ypos, yanchor=1.)
 
 screen _image_selecter(default):
     modal True
@@ -636,7 +636,7 @@ screen _image_selecter(default):
 screen _selected_image(string):
     add string at truecenter
 
-screen _move_keyframes:
+screen _move_keyframes():
     modal True
     key "game_menu" action Hide("_move_keyframes")
     frame:
@@ -717,18 +717,18 @@ init -1600 python in _viewers:
             self.state = {}
             # ((property, default)...), default is used when property can't be got.
             self.props = (
-            ("xpos", 0.), 
-            ("ypos", 0.), 
-            ("xanchor", 0.), 
-            ("yanchor", 0.), 
-            ("xoffset", 0.), 
-            ("yoffset", 0.), 
-            ("xzoom", 1.), 
-            ("yzoom", 1.), 
-            ("zoom", 1.), 
+            ("xpos", 0.),
+            ("ypos", 0.),
+            ("xanchor", 0.),
+            ("yanchor", 0.),
+            ("xoffset", 0.),
+            ("yoffset", 0.),
+            ("xzoom", 1.),
+            ("yzoom", 1.),
+            ("zoom", 1.),
             ("rotate", 0,),
-            ("alpha", 1.), 
-            ("additive", 0.), 
+            ("alpha", 1.),
+            ("additive", 0.),
             )
             self.force_float = ["zoom", "xzoom", "yzoom", "alpha", "additive"]
 

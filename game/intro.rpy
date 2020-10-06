@@ -31,10 +31,10 @@ label start:
     "He takes the last drag from the cigarette and lets it out with a sigh."
     "I turn back to the kitchen. I see a bowl on the counter covered with a paper napkin."
     "I lift up the napkin with low expectations."
-    "Inside, rice. A single spoonfull of hard, old rice."
+    "Inside, I find a single clump of old, hard steamed rice."
     Hiroya "Hm."
     "I replace the napkin and go back to the living room."
-    
+
     Dad "They only want spry, young folk working anyway."
     "He reaches for another cigarette, only to find that the box is empty."
     "He glares down into the empty carton."
@@ -65,11 +65,11 @@ label start:
     Hiroya "I'm leaving this crummy apartment behind. I'm leaving you behind."
     Hiroya "You can't support a family, you can barely support yourself!"
     Hiroya "You never wanted a son anyway! You said so yourself!"
-    
+
     Dad "Hiroya! No. You know what, fine."
     Dad "You think you'll do that much better on your own? Well go on then!"
     Dad "Get out of my house, you ungrateful punk."
-    
+
     "Fine. That's what I'll do then. I'll leave my pig of a father once and for all. I'll make my own way from now on."
     "I grab just a few things and throw them into my schoolbag."
     Hiroya "...Good for nothing pig. You know this is exactly why Mom left you."
@@ -111,7 +111,7 @@ label start:
     scene black with vpunch
     play sound "sfx/heavy_bag_drop_dirt2.ogg"
 
-    
+
     stop music fadeout 2.0
     $ renpy.pause (3, hard = True)
 

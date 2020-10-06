@@ -588,8 +588,8 @@ style game_menu_navigation_frame:
     yfill True
 
 style game_menu_content_frame:
-    left_margin 40
-    right_margin 20
+    left_margin 20
+    right_margin 0
 
     top_margin 60
 
@@ -641,7 +641,7 @@ screen about():
             text _("Version [config.version!t]\n")
 
             # gui.about is usually set in options.rpy.
-            
+
             if gui.about:
                 text "[gui.about!t]\n"
 
@@ -658,10 +658,10 @@ style about_label:
 
 style about_label_text:
     is gui_label_text
-    xpos +75
+    xpos +0
 style about_text:
     is gui_text
-    xpos +100
+    xpos +0
 
 style about_label_text:
     size gui.label_text_size
@@ -1583,4 +1583,3 @@ style slider_pref_vbox:
 style slider_pref_slider:
     variant "small"
     xsize 600
-

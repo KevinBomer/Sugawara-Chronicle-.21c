@@ -481,9 +481,8 @@ label chapter1:
         "Ask about your teacher.":
             scene classroom with dissolve
             Hiroya "It’s not like Hirayama-sensei to miss class without any sort of explanation."
-            show Akari p2 nervous u at center:
+            show Akari p2 nervous u at center with dissolve:
                 xflip
-
             Akari "I hope everything is okay. Someone should go and talk to the principal."
             Akari questioning "Will you come with me?"
             Hiroya "Huh?"
@@ -719,7 +718,7 @@ label chapter1:
     "Math, English, Literature, the usual subjects."
     "On any other day, classes like these would be a breeze..."
     "...But I was kicked out last night."
-    "Well, Akari’s drawing on her notebook, so at least I’m not the only one ignoring the teacher."
+    "Well, Akari’s drawing on her notebook, so at least I’m not the only one ignoring today's lesson."
     "Maybe I can look for a part-time job after school today."
     "I haven't really worked before, but everyone has to start somewhere."
     "Once I get some money, I'll be in a much better spot."
