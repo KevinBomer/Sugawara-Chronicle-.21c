@@ -316,11 +316,11 @@ init:
     image Yukiko u speaking surprised p1 = "sprites/Yukiko/uniform/pose1/Yukiko u speaking surprised p1.png"
     #pose2
     image Yukiko u angry p2 = "sprites/Yukiko/uniform/pose2/Yukiko u angry p2.png"
-    image Yukiko u curious p2 = "sprites/Yukiko/uniform/pose2/Yukiko u curious p2.png"
+    image Yukiko u curious p2 = "sprites/Yukiko/uniform/pose2/Yukiko u curious p2.png"###Need this expression for p1
     image Yukiko u frown p2 = "sprites/Yukiko/uniform/pose2/Yukiko u frown p2.png"
     image Yukiko u pout p2 = "sprites/Yukiko/uniform/pose2/Yukiko u pout p2.png"
     image Yukiko u poutyblush p2 = "sprites/Yukiko/uniform/pose2/Yukiko u poutyblush p2.png"
-    image Yukiko u smile attitude p2 = "sprites/Yukiko/uniform/pose2/Yukiko u smile attitude p2.png"
+    image Yukiko u smile attitude p2 = "sprites/Yukiko/uniform/pose2/Yukiko u smile attitude p2.png"#####need this expression for p1
     image Yukiko u smile confident p2 = "sprites/Yukiko/uniform/pose2/Yukiko u smile confident p2.png"
     image Yukiko u smile embarrassed p2 = "sprites/Yukiko/uniform/pose2/Yukiko u smile embarrassed p2.png"
     image Yukiko u smile eyesclosed p2 = "sprites/Yukiko/uniform/pose2/Yukiko u smile eyesclosed p2.png"
@@ -353,7 +353,7 @@ init:
     define audio.SugarMorning = "music/Sugar Morning.mp3"
     define audio.Sugawara = "music/SugawaraKS.mp3"
     define audio.Early = "music/early.mp3"
-
+    define audio.Jazz = "music/Jazz.mp3"
     #Background initialization:
     image white = "backgrounds/white.png"
     image chapter screen_1 = "chapter screens/chapter_screen_1.png"
@@ -432,7 +432,10 @@ define config.say_attribute_transition = dissolve
 label splashscreen:
     $ renpy.music.play(config.main_menu_music)
     scene black
-    show sky night onlayer master:
+    show text "{size=32}{font=font-classic.ttf}{color=#ffffff}SARCHALEN VISUAL MEDIA{/font}"
+    $ renpy.pause(.8, hard = True)
+    scene white
+    show sky night:
         subpixel True xpos 0.4 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 1.55 rotate None
         parallel:
             xpos 0.5

@@ -1,9 +1,15 @@
-﻿label Chapter2Rivalry:
+﻿label Kaori2:
+    scene white with Dissolve(.2)
+    scene chapter_screen_1 with Dissolve(.2)
+    show logo with Dissolve(.5):
+        xalign .5
+        yalign .6
+        xpos .3
+        ypos .5
+        zoom .8
     $ renpy.pause(1, hard=True)
-    scene chapter_screen_1 with dissolve
-    $ renpy.pause(1, hard=True)
-    show text "{size=36}Chapter 2: Game Plan" at chaptertitlespot with moveinleft
-    $ renpy.pause(2, hard=True)
+    show text "{size=40}{color=#3a47a6}Chapter Two \n{size=64}The Game Plan" at chaptertitlespot with Dissolve(1.0)
+    $ renpy.pause(3, hard=True)
     scene courtyard with dissolve
 
     "I'm relieved when class finally ends for the day."
@@ -685,4 +691,4 @@
     "With a scowl, Kaori turned towards the dugout. It looked like she was on the warpath now."
     "I had a hunch that this peptalk of hers was going to go on for quite a long time."
     "Shooting one last, forlorn glance to the cozy tent I was leaving behind, I move to vacate the grounds with the rest of the crowd."
-    jump Chapter3Kaori
+    jump Kaori3

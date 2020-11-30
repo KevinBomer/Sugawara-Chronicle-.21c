@@ -1,11 +1,17 @@
 #Okay I’m just gonna write from when they get to Akari’s house. I’ll write up how the walk there went after I see what Kev wanted to write.
-label Chapter2DinneratAkaris:
+label Akari2:
 
+    scene white with Dissolve(.2)
+    scene chapter_screen_1 with Dissolve(.2)
+    show logo with Dissolve(.5):
+        xalign .5
+        yalign .6
+        xpos .3
+        ypos .5
+        zoom .8
     $ renpy.pause(1, hard=True)
-    scene chapter_screen_1 with dissolve
-    $ renpy.pause(1, hard=True)
-    show text "{size=36}Chapter 2: Dinner at Akari's" at chaptertitlespot with moveinleft
-    $ renpy.pause(2, hard=True)
+    show text "{size=40}{color=#3a47a6}Chapter Two \n{size=64}Dinner at Akari's" at chaptertitlespot with Dissolve(1.0)
+    $ renpy.pause(3, hard=True)
     scene courtyard with dissolve
 
     "I'm relieved when class finally ends for the day."
@@ -469,101 +475,69 @@ label Chapter2DinneratAkaris:
     Miyu "Hiroya, this is Yukiko. She's going to be living with me for awhile."
     Yukiko vhappy "Nice to meet you! I'm Yukiko Mizuno!"
     "Oh no... She is definitely another Akari."
-
-    show Miyu u speaking onlayer master:
-        subpixel True xpos 0.15 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
-        parallel:
-            xpos -0.13
-            easein 1.7 xpos 0.18
-    show akari house day onlayer master:
-        subpixel True xpos 0.39 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 1.24 rotate None
-        parallel:
-            xpos 0.39
-            easein 1.4 xpos 0.62
-    show Akari u speaking p1 onlayer master:
-        subpixel True xpos 0.41 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
-        parallel:
-            xpos 0.35
-            easein 1.4 xpos 0.52
-    show Yukiko c pout onlayer master:
-        subpixel True xpos 0.64 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
-        parallel:
-            xpos 0.64
-            easein 1.4 xpos 0.78
-    show Akari u happy p2 with dissolve
+    show Akari c happy with dissolve
     Akari "Come on, the food's almost ready!"
     Hiroya "Have a seat."
     "I direct Yukiko to the kotatsu where Miyu and Akari are seated."
-    show Yukiko c smile confident:
-        xflip
-        dissolve
+    show Yukiko smile confident at xflip with dissolve
     Yukiko "It was nice to meet you earlier, Akari! Miyu has told me a lot about you."
-    show Akari u questioning p1 with dissolve
+    show Akari c questioning with dissolve
     "Akari looks at Yukiko, seemingly analyzing her."
-    show Akari u vhappy p3 with dissolve
+    show Akari c vhappy with dissolve
     Akari "You're so cuuuute!"
-    show Akari u speaking p3 with dissolve
+    show Akari c speaking with dissolve
     Akari "Like a... like a..."
-    show Akari u vhappy p3 with dissolve
+    show Akari c vhappy with dissolve
     Akari "Like a penguin!"
     Hiroya "What are you talking about, Akari?"
-    show Yukiko c smile attitude:
-        xflip
-        dissolve
+    show Yukiko u smile attitude p2 at xflip with dissolve
+
     Yukiko "A penguin, I like that!"
-    show Yukiko c smile confident:
-        xflip
-        dissolve
+    show Yukiko u smile confident p2 at xflip with dissolve
     "She turns to look at me."
     Yukiko "And you're Hiroya, then? THE Hiroya?"
     Hiroya "Huh?"
-    show Yukiko c smile happy:
-        xflip
-        dissolve
+    show Yukiko u smile happy at xflip with dissolve
     Yukiko "Miyu never shuts up about you!"
     show Miyu u upset with dissolve
     Miyu "Yu-Yukiko!"
     show Miyu u nervous with dissolve
     Miyu "It's normal to talk about your friends, right?"
-    show Yukiko c smile attitude
+    show Yukiko u smile attitude p2 with dissolve
     Yukiko "Mhmm, sure."
     Hiroya "...You guys are weird."
-    show Akari u speaking p2 with dissolve
+    show Akari c speaking with dissolve
     Akari "Hey! Everyone ready to eat or what?"
     Hiroya "Yes, I vote food."
-    show Yukiko c smile vhappy:
-        xflip
-        dissolve
+    show Yukiko u smile vhappy at xflip with dissolve
     Yukiko "Oh! I vote food as well!"
     show Miyu u speaking with dissolve
     Miyu "You guys know it's not a vote, right?"
     Hiroya "I always stand by democracy."
-    show Yukiko c smile eyesclosed with dissolve
+    show Yukiko u smile eyesclosed with dissolve
     Yukiko "I still vote food."
     "Akari's mom comes over from the kitchen with a large silver pot."
     Miyazaki "Curry time!"
     Hiroya "Hell yeah!"
     "Theres chicken curry, rice, salad, and juice. It all looks so perfect."
-    show Yukiko c speaking surprised:
-        xflip
-        dissolve
+    show Yukiko u speaking surprised at xflip with dissolve
     Yukiko "This is so good!"
-    show Yukiko c smile vhappy
+    show Yukiko u smile vhappy
     Yukiko "Did you make this, Miyazaki-san?"
     Miyazaki "Yep, I sure did! It's my own special recipe."
     show Miyu u happy with dissolve
     Miyu "Miyazaki-san is a very good chef."
     Hiroya "But she can only make the one dish."
     Miyazaki "I'm afraid that much is true as well."
-    show Yukiko c smile eyesclosed
+    show Yukiko u smile eyesclosed
     Yukiko "That's fine, I could eat this every day!"
     Hiroya "Then you should come over. The three of us meet here all the time."
-    show Yukiko c speaking surprised
+    show Yukiko u speaking surprised
     "Maybe I shouldn't be inviting her to someone else's house, but Akari and her mom don't mind anyway."
-    show Akari u vhappy p1 with dissolve
+    show Akari c vhappy with dissolve
     Akari "Yeah! We'd love to have you!"
     Miyu "See, Yukiko? I told you they'd love you."
-    show Yukiko c smile eyesclosed
+    show Yukiko u smile eyesclosed
     hide Yukiko with dissolve
     hide Miyu with dissolve
     hide Akari with dissolve
@@ -572,46 +546,46 @@ label Chapter2DinneratAkaris:
     menu:
         "Go help Akari with the dishes.":
             "There's a failry large pile of dishes, more than what would have come from our meal."
-            show Akari u happy p1 with dissolve
+            show Akari c happy with dissolve
             Akari "Mom's been working a lot lately, so she hasn't had time to take care of all these."
             Akari "Why don't you go see what Miyu and Yukiko are up to while I finish up here?"
             Hiroya "Nah, I'll help you out."
             "She has a double sink with one faucet, so we stand next to each other in silence."
             "Akari turns the faucet to her side of the sink."
             Hiroya "Hey, I was still using that."
-            show Akari u speaking p1 with dissolve
+            show Akari c speaking with dissolve
             Akari "But I need it now. I can't clean without the water."
             Hiroya "Just plug the sink and fill it, then you'll have plenty."
             Akari "Then it'll get all gross as I use it!"
             Hiroya "I guess you'll just have to wait your turn, then."
             "I pull the faucet back over to my side."
-            show Akari u frown p1 with dissolve
+            show Akari c frown with dissolve
             Akari "Hiiiiroyaaa!"
             "When she reaches back over for it, I cup my hands under the water and splash her."
-            show Akari u speaking p1 with dissolve
+            show Akari c speaking with dissolve
             "That may have been a poor decision."
-            show Akari u confident p1 with dissolve
+            show Akari c confident with dissolve
             "Oh no."
             "She grabs the side sprayer and aims it at me."
             Hiroya "Have mercy!"
             Akari "Give me the faucet."
             Hiroya "Never!"
             "She lets loose and sprays me with water."
-            show Akari u confident p3 with dissolve
+            show Akari c confident with dissolve
             Akari "Ahahaha! I win!"
-            show Akari u questioning p3 with dissolve
+            show Akari c questioning with dissolve
             "Akari looks me up and down, water dripping down my uniform."
             Akari "Oh... I may have gone overboard."
             "I examine my shirt, feeling the water trickle onto my pants."
             Hiroya "...Maybe a little."
-            show Akari u questioning p1 with dissolve
+            show Akari c questioning with dissolve
             Akari "I'll finish up here if you want to go dry off."
             Hiroya "Yeah, okay."
-            show Akari u speaking p1 with dissolve
+            show Akari c speaking with dissolve
             "Watching my step, trying to keep my socks as dry as possible, I turn towards the restroom."
             Akari "Oh, and Hiroya?"
             Hiroya "Hmm?"
-            show Akari u frown p2 with dissolve
+            show Akari c frown with dissolve
             Akari "Sorry."
             Hiroya "Pfft, don't worry about it."
             hide Akari with dissolve
@@ -651,44 +625,44 @@ label Chapter2DinneratAkaris:
                     Miyu "Yeah, I guess."
                 "Go see Yukiko.":
                     "As I approach Yukiko, I hear a soft meow."
-                    show Yukiko c curious
+                    show Yukiko u curious p2
                     Yukiko "Aww, kitty, come back..."
                     "Uroko trots past my legs, away from Yukiko."
-                    show Yukiko c pout with dissolve
+                    show Yukiko u pout with dissolve
                     Yukiko "The fuzzball won't love me."
                     Hiroya "Do you know how to work with cats?"
                     Yukiko "Not really..."
-                    show Yukiko c curious with dissolve
+                    show Yukiko u curious p2 with dissolve
                     Yukiko "We've always moved around too much for pets."
                     Hiroya "I see, that's too bad."
-                    show Yukiko c smile vhappy with dissolve
+                    show Yukiko u smile vhappy with dissolve
                     Yukiko "Oh! But Izumi's kind of like a cat."
-                    show Yukiko c pout with dissolve
+                    show Yukiko u pout with dissolve
                     Yukiko "Although she doesn't really talk to me either."
                     Hiroya "Well, siblings can be distant."
-                    show Yukiko c frown with dissolve
+                    show Yukiko u frown with dissolve
                     Yukiko "But you'd think she would at least acknowledge me instead of sleeping all day."
                     Hiroya "Yeah, I guess I can understand wanting a supporting family."
                     "Though I can't help but envy that she has a good place to sleep."
-                    show Yukiko c speaking questioning with dissolve
+                    show Yukiko u speaking questioning with dissolve
                     Yukiko "Do you not have a good family life, Hiroya?"
                     Hiroya "Oh, uh, nah. I just get what you mean."
-                    show Yukiko c smile eyesclosed with dissolve
+                    show Yukiko u smile eyesclosed with dissolve
                     Yukiko "That's good to hear."
-                    show Yukiko c speaking surprised with dissolve
+                    show Yukiko u speaking surprised with dissolve
                     Yukiko "Hey, why are you all wet? What happened?"
                     Hiroya "Akari. Akari happened."
             show Miyu u speaking at rightoffset
             Miyu "Hey Yukiko, we should get going soon."
-            show Yukiko c curious at leftoffset
+            show Yukiko u curious p2 at leftoffset
             Yukiko "Already?"
             Miyu "Yeah, Izumi is probably wondering where we are."
-            show Yukiko c speaking annoyed at leftoffset with dissolve
+            show Yukiko u speaking annoyed at leftoffset with dissolve
             Yukiko "I doubt it."
             Hiroya "I should probably get going too."
-            show Akari u vhappy p1 at rightoffset2
+            show Akari c vhappy at rightoffset2
             Akari "Thanks for coming, guys! It was nice to meet you, Yukiko!"
-            show Yukiko c smile attitude at leftoffset with dissolve
+            show Yukiko u smile attitude p2 at leftoffset with dissolve
             Yukiko "You too, Akari!"
             "It's getting dark, and I don't really want to be wandering around a bridge when it's pitch black."
             Hiroya "I'm gonna go on ahead, guys. See you in class tomorrow!"
@@ -696,16 +670,16 @@ label Chapter2DinneratAkaris:
             hide Yukiko
             hide Miyu
             "As I leave, I'm stopped."
-            show Akari u speaking p1
+            show Akari c speaking
             Akari "Um! Hiroya."
-            show Akari u vhappy p1 with dissolve
+            show Akari c vhappy with dissolve
             Akari "Thanks for helping me out with the dishes!"
             Hiroya "Yeah, of course. It was fun, until I got soaked."
-            show Akari u happy p1 with dissolve
+            show Akari c happy with dissolve
             Akari "Sorry about that."
             "She still doesn't look sorry."
             Hiroya "All's good. I'm taking off then. Bye!"
-            show Akari u vhappy p3 with dissolve
+            show Akari c vhappy with dissolve
             Akari "Bye-bye!"
             scene black with dissolve
             scene sky night
@@ -714,7 +688,7 @@ label Chapter2DinneratAkaris:
             "It's unlikely, but I'm a cautious man."
             "When I get to the bridge, it's empty of people. I climb down where my few possessions are hidden, and set up for the night."
             scene black with dissolve
-            jump Chapter3somethingAboutAClub
+            jump Akari3
         "Check to see what Miyu's up to.":
             Hiroya "Heya Miyu, still sitting here?"
             "She looks up at me from the table."
@@ -756,75 +730,75 @@ label Chapter2DinneratAkaris:
             menu:
                 "See if Akari needs help with dishes.":
                     Hiroya "Heya, Akari, how goes the dish washing?"
-                    show Akari u confident p2
+                    show Akari c confident with dissolve
                     Akari "Shh!"
                     Hiroya "Shh?"
                     Akari "Be quiet for a sec!"
                     "Confused, I wait for her to explain."
-                    show Akari u happy p2 with dissolve
+                    show Akari c happy with dissolve
                     Akari "Aaaand... done!"
                     Hiroya "Can I talk now?"
-                    show Akari u happy p1 with dissolve
+                    show Akari c happy with dissolve
                     Akari "Yep!"
                     Hiroya "Why did you need me to be quiet?"
                     Akari "I needed to concentrate."
                     Hiroya "On... cleaning dishes?"
-                    show Akari u confident p3 with dissolve
+                    show Akari c confident with dissolve
                     Akari "Exactly! It's a process!"
                     Hiroya "Riiiight. So you don't need help?"
-                    show Akari u questioning p1 with dissolve
+                    show Akari c questioning with dissolve
                     Akari "Nah. You should have come earlier."
                     Hiroya "Oh, sorry about that. You should have asked me."
-                    show Akari u confident p3 with dissolve
+                    show Akari c confident with dissolve
                     Akari "What kind of class rep would I be if I couldn't even clean dishes on my own!"
                     Hiroya "Still on about that, huh, miss bathroom duty?"
-                    show Akari u frown p2 with dissolve
+                    show Akari c frown with dissolve
                     Akari "You didn't have to bring that back up..."
                     Hiroya "Put your phone on silent next time."
                     "She salutes me."
-                    show Akari u confident p3 with dissolve
+                    show Akari c confident with dissolve
                     Akari "Sir yes sir!"
                 "Go see Yukiko.":
                     "As I approach Yukiko, I hear a soft meow."
-                    show Yukiko c curious
+                    show Yukiko u curious p2
                     Yukiko "Aww, kitty, come back..."
                     "Uroko trots past my legs, away from Yukiko."
-                    show Yukiko c pout with dissolve
+                    show Yukiko u pout with dissolve
                     Yukiko "The fuzzball won't love me."
                     Hiroya "Do you know how to work with cats?"
                     Yukiko "Not really..."
-                    show Yukiko c curious with dissolve
+                    show Yukiko u curious p2 with dissolve
                     Yukiko "We've always moved around too much for pets."
                     Hiroya "I see, that's too bad."
-                    show Yukiko c smile vhappy with dissolve
+                    show Yukiko u smile vhappy with dissolve
                     Yukiko "Oh! But Izumi's kind of like a cat."
-                    show Yukiko c pout with dissolve
+                    show Yukiko u pout with dissolve
                     Yukiko "Although she doesn't really talk to me either."
                     Hiroya "Well, siblings can be distant. You're not required to get along."
-                    show Yukiko c frown with dissolve
+                    show Yukiko u frown with dissolve
                     Yukiko "But you'd think she would at least acknowledge me instead of sleeping all day."
                     Hiroya "Yeah, I guess I can understand wanting a supporting family."
                     "Though I can't help but envy that she has a good place to sleep."
-                    show Yukiko c speaking questioning with dissolve
+                    show Yukiko u speaking questioning with dissolve
                     Yukiko "Do you not have a good family life, Hiroya?"
                     Hiroya "Oh, uh, nah. I just get what you mean."
-                    show Yukiko c smile eyesclosed with dissolve
+                    show Yukiko u smile eyesclosed with dissolve
                     Yukiko "That's good to hear."
-                    show Yukiko c frown with dissolve
+                    show Yukiko u frown with dissolve
                     Yukiko "Now..."
-                    show Yukiko c pout with dissolve
+                    show Yukiko u pout with dissolve
                     Yukiko "Where did kitty go...?"
             show Miyu u speaking at rightoffset
             Miyu "Hey Yukiko, we should get going soon."
-            show Yukiko c curious at leftoffset
+            show Yukiko u curious p2 at leftoffset
             Yukiko "Already?"
             Miyu "Yeah, Izumi is probably wondering where we are."
-            show Yukiko c speaking annoyed at leftoffset with dissolve
+            show Yukiko u speaking annoyed at leftoffset with dissolve
             Yukiko "I doubt it."
             Hiroya "I should probably get going too."
-            show Akari u vhappy p1 at rightoffset2
+            show Akari c vhappy at rightoffset2
             Akari "Thanks for coming, guys! It was nice to meet you, Yukiko!"
-            show Yukiko c smile attitude at leftoffset with dissolve
+            show Yukiko u smile attitude p2 at leftoffset with dissolve
             Yukiko "You too, Akari!"
             "It's getting dark, and I don't really want to be wandering around a bridge when it's pitch black."
             Hiroya "I'm gonna go on ahead, guys. See you in class tomorrow!"
@@ -853,44 +827,44 @@ label Chapter2DinneratAkaris:
             "It's unlikely, but I'm a cautious man."
             "When I get to the bridge, it's empty of people. I climb down where my few possessions are hidden, and set up for the night."
             scene black with dissolve
-            jump Chapter3somethingAboutAClub
+            jump Akari3
         "Go talk to Yukiko.":
             "Before I can say anything to Yukiko, I hear a meow."
-            show Yukiko c curious
+            show Yukiko u curious p2
             Yukiko "Come here, kitty."
             "She's crouched down and looking under a chair."
             Hiroya "Trying to get him to come out?"
-            show Yukiko c speaking questioning with dissolve
+            show Yukiko u speaking questioning with dissolve
             Yukiko "Oh, Hiroya."
-            show Yukiko c speaking serious with dissolve
+            show Yukiko u speaking serious with dissolve
             Yukiko "He doesn't seem to like me."
             Hiroya "Well, you chased him under a chair, so no surprise there."
-            show Yukiko c pout with dissolve
+            show Yukiko u pout with dissolve
             Yukiko "D'you think I scared him?"
             "She looks like she feels pretty guilty."
             "I guess she just doesn't know how to deal with cats."
             Hiroya "Here, I'll show you how to coax him out."
-            show Yukiko c smile vhappy with dissolve
+            show Yukiko u smile vhappy with dissolve
             Yukiko "Really, Hiroya? You're the best!"
             Hiroya "I know."
             Hiroya "Back up from the chair a bit."
             "There's a bag of treats on the shelf, so I grab it and give one to Yukiko."
             Hiroya "Hold it out in front of you and wait."
-            show Yukiko c smile confident with dissolve
+            show Yukiko u smile confident with dissolve
             Yukiko "Right!"
             "I put a couple treats on the floor between Uroko and Yukiko, then crouch behind her."
-            show Yukiko c smile eyesclosed with dissolve
+            show Yukiko u smile eyesclosed with dissolve
             Yukiko "Don't be scared, little one!"
             "Uroko slowly came out, eating the treats laid out in front of him."
             "He cautiously approached Yukiko."
             Hiroya "Don't move, let him get a read on you."
-            show Yukiko c smile confident with dissolve
+            show Yukiko u smile confident with dissolve
             Yukiko "Got it!"
             "Uroko, after carefully sniffing her out, took her treat."
-            show Yukiko c speaking surprised with dissolve
+            show Yukiko u speaking surprised with dissolve
             Yukiko "He took it!"
             Hiroya "You can pet him now."
-            show Yukiko c smile vhappy with dissolve
+            show Yukiko u smile vhappy with dissolve
             Yukiko "He's so soft!"
             Hiroya "Here, take the treats. But don't give him too many."
             Yukiko "Okay!"
@@ -899,33 +873,33 @@ label Chapter2DinneratAkaris:
             menu:
                 "See if Akari needs help with dishes.":
                     Hiroya "Heya, Akari, how goes the dish washing?"
-                    show Akari u confident p2
+                    show Akari c confident with dissolve
                     Akari "Shh!"
                     Hiroya "Shh?"
                     Akari "Be quiet for a sec!"
                     "Confused, I wait for her to explain."
-                    show Akari u happy p2 with dissolve
+                    show Akari c happy with dissolve
                     Akari "Aaaand... done!"
                     Hiroya "Can I talk now?"
-                    show Akari u happy p1 with dissolve
+                    show Akari c happy with dissolve
                     Akari "Yep!"
                     Hiroya "Why did you need me to be quiet?"
                     Akari "I needed to concentrate."
                     Hiroya "On... cleaning dishes?"
-                    show Akari u confident p3 with dissolve
+                    show Akari c confident with dissolve
                     Akari "Exactly! It's a process!"
                     Hiroya "Riiiight. So you don't need help?"
-                    show Akari u questioning p1 with dissolve
+                    show Akari c questioning with dissolve
                     Akari "Nah. You should have come earlier."
                     Hiroya "Oh, sorry about that. You should have asked me."
-                    show Akari u confident p3 with dissolve
+                    show Akari c confident with dissolve
                     Akari "What kind of class rep would I be if I couldn't even clean dishes on my own!"
                     Hiroya "Still on about that, huh, miss bathroom duty?"
-                    show Akari u frown p2 with dissolve
+                    show Akari c frown with dissolve
                     Akari "You didn't have to bring that back up..."
                     Hiroya "Put your phone on silent next time."
                     "She salutes me."
-                    show Akari u confident p3 with dissolve
+                    show Akari c confident with dissolve
                     Akari "Sir yes sir!"
                 "Go see Miyu.":
                     show Miyu u happy with dissolve
@@ -959,18 +933,18 @@ label Chapter2DinneratAkaris:
                     Miyu "Yeah, I guess."
             show Miyu u speaking at rightoffset with dissolve
             Miyu "Hey Yukiko, we should get going soon."
-            show Yukiko c curious at leftoffset with moveinleft
+            show Yukiko u curious p2 at leftoffset with moveinleft
             Yukiko "Already?"
             Miyu "Yeah, Izumi is probably wondering where we are."
-            show Yukiko c speaking annoyed at leftoffset with dissolve
+            show Yukiko u speaking annoyed at leftoffset with dissolve
             Yukiko "I doubt it."
             Hiroya "I should probably get going too."
-            show Akari u vhappy p1 at rightoffset2 with moveinright:
+            show Akari c vhappy at rightoffset2 with moveinright:
                 xflip
                 xpos .7
                 yanchor -.1
             Akari "Thanks for coming, guys! It was nice to meet you, Yukiko!"
-            show Yukiko c smile attitude at leftoffset with dissolve
+            show Yukiko u smile attitude p2 at leftoffset with dissolve
             Yukiko "You too, Akari!"
             "It's getting dark, and I don't really want to be wandering around a bridge when it's pitch black."
             Hiroya "I'm gonna go on ahead, guys. See you in class tomorrow!"
@@ -978,22 +952,22 @@ label Chapter2DinneratAkaris:
             hide Yukiko
             hide Miyu
             "As I leave, I'm stopped."
-            show Yukiko c smile attitude
+            show Yukiko u smile attitude p2 with dissolve
             Yukiko "Hey, Hiroya!"
-            show Yukiko c smile confident with dissolve
+            show Yukiko u smile confident with dissolve
             Yukiko "Thanks for getting kitty to see me."
             "She still doesn't know Uroko's name."
             Hiroya "I was just helping him, since he seemed so terrified."
-            show Yukiko c poutyblush with dissolve
+            show Yukiko u poutyblush with dissolve
             Yukiko "I'm not that scary, am I?"
             Hiroya "I'm teasing. I'm glad you two are getting along."
-            show Yukiko c smile confident with dissolve
+            show Yukiko u smile confident with dissolve
             Yukiko "I've never had a cat before, so it was really nice to finally befriend one."
             Hiroya "Well, you can come back whenever. Akari won't mind."
-            show Yukiko c smile eyesclosed with dissolve
+            show Yukiko u smile eyesclosed with dissolve
             Yukiko "I definitely will!"
             Hiroya "I gotta get going, so see you around."
-            show Yukiko c smile vhappy with dissolve
+            show Yukiko u smile vhappy with dissolve
             Yukiko "Yeah! See you!"
             scene black with dissolve
             scene sky night
@@ -1013,4 +987,4 @@ label Chapter2DinneratAkaris:
             "I climb down the service ladder to my camp below the bridge."
             "Despite the hard ground and lack of any decent bedtime reading material, this isn't so bad."
             scene black with dissolve
-            jump Chapter3somethingAboutAClub
+            jump Akari3

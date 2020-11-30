@@ -10,13 +10,19 @@
 init:
     $ fan = False
 
-label Chapter3Kaori:
+label Kaori3:
 
+    scene white with Dissolve(.2)
+    scene chapter_screen_1 with Dissolve(.2)
+    show logo with Dissolve(.5):
+        xalign .5
+        yalign .6
+        xpos .3
+        ypos .5
+        zoom .8
     $ renpy.pause(1, hard=True)
-    scene chapter_screen_1 with dissolve
-    $ renpy.pause(1, hard=True)
-    show text "{size=36}Chapter 3: Licking Our Wounds" at chaptertitlespot with moveinleft
-    $ renpy.pause(2, hard=True)
+    show text "{size=40}{color=#3a47a6}Chapter Three \n{size=64}Licking our Wounds" at chaptertitlespot with Dissolve(1.0)
+    $ renpy.pause(3, hard=True)
 
     scene street day with dissolve
     "Defeated, and with their heads hung low, our troops spilled out into the streets."
@@ -761,6 +767,7 @@ label ch3Night:
     "He staggered off to begin his search. Thinking he'd need a second pair of eyes, I followed."
     "Tiredly, we searched and gathered the things we need. After some work, we had an arrangement worked out."
     #revisit this based on the contents of the BG we want
+    scene black with squares
     show Suzuki bb speaking p2 with dissolve:
         align (0.5, 1.0)
     Suzuki "A'ight, you'll be sleeping here."
@@ -768,12 +775,11 @@ label ch3Night:
     Suzuki "What? It's big enough, right? You can stretch your legs, easy."
     Hiroya "The spices are really strong."
     Suzuki "Breathe through your mouth, you'll be fine. Good night."
-    hide suzuki with dissolve
+    hide Suzuki with dissolve
     "Without another word, he slammed the door behind me, and stomped off."
     "I look around to get a feel for my new surroundings."
     Hiroya "Well, it beats sleeping under the bridge."
     "Wearily, I slipped underneath the sheets, feeling my weary body relax, almost in agreement to the plushy cushions."
     "Definitely beats sleeping on hard concrete too."
     scene black with dissolve
-    "I didn't have any energy to continue questioning what had happened, and allowed myself to pass out."
-    return
+    jump interstitial

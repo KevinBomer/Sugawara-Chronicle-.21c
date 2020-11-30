@@ -380,7 +380,8 @@ init 1600 python:
     if not _3d_layers:
         register_3d_layer('master')
 
-screen _action_editor(tab="images", layer="master", name="", time=0):
+screen _action_editor(tab="images", layer="overlay", name="", time=0):
+    zorder 1001
     if time:
         timer time+1 action Function(_viewers.change_time, _viewers.time)
     $state={k: v for dic in [_viewers.transform_viewer.state_org[layer], _viewers.transform_viewer.state[layer]] for k, v in dic.items()}

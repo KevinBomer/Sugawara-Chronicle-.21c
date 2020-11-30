@@ -1038,7 +1038,7 @@ label chapter1:
             "I copy down the homework assignment on the board and try my best to focus for the remainder of the period."
             "Akari leaves me alone for the rest of the class, but I know that regardless of her detention, she's looking forward to tonight."
             scene black with fade
-            jump Chapter2DinneratAkaris
+            jump Akari2
 
         "Sorry, I already made plans for tonight.":
 
@@ -1079,4 +1079,4 @@ label chapter1:
             "I copy down the homework assignment on the board and do my best to ignore her for the remainder of the period."
             "She doesn't try to whisper to me again."
             scene black with fade
-            jump Chapter2Rivalry
+            jump Kaori2

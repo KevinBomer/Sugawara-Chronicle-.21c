@@ -22,13 +22,13 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "0.21c"
+define config.version = "0.22a"
 
 ## Text that is placed on the game's about screen. To insert a blank line
 ## between paragraphs, write \n\n.
 
 
-define gui.about = _("A Product of Sarchalen Visual Media\n\nWriters: Monochrome, Shake n'Bake, Tutty_the_Fruity, Kevin Bomer\nLead Artist: SandraDev\nCharacter Art: Kurisu-kun, Erezu-kun\nBackgrounds: Erezu-kun\nMusic: Alyx , CrysetBase\nSFX: Able Kirby\nUI Design: ds-sans\nScripting & Programming: Gabriel Misajlovski\nEditor: Wolf\nConcept: Kevin Bomer\n\n© 2018 Sarchalen Visual Media All Rights Reserved")
+define gui.about = _("A Product of Sarchalen Visual Media\n\nWriters: Monochrome, Shake n'Bake, Tutty_the_Fruity, Kevin Bomer\nLead Artist: SandraDev\nCharacter Art: Kurisu-kun, Erezu-kun\nBackgrounds: Erezu-kun\nMusic: Alyx , CrysetBase\nSFX: Able Kirby\nUI Design: ds-sans\nScripting & Programming: Gabriel Misajlovski\nEditor: Wolf\nConcept: Kevin Bomer\n\n© 2020 Sarchalen Visual Media All Rights Reserved")
 
 
 ## A short name for the game used for executables and directories in the built

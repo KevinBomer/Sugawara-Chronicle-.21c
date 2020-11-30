@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapter2-dinnerAtAkaris.rpy", line 131: expected 'comma or end of line' not found.
-    behind Akari
+File "game/interstitial.rpy", line 191: expected 'comma or end of line' not found.
+    scene black with Fade(5)
     ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Oct 05 22:42:30 2020
+Sun Nov 29 22:01:08 2020

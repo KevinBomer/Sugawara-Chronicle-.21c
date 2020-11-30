@@ -1,42 +1,67 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-Compiling ATL code at game/chapter1.rpy:486
-  File "game/chapter1.rpy", line 484, in script
-    show Akari p2 nervous u at center:
-Exception: Not a displayable: <curry <class 'renpy.display.transition.Dissolve'> (0.3,) {}>
+While running game code:
+  File "game/chapter2-dinnerAtAkaris.rpy", line 956, in script
+    Yukiko "Hey, Hiroya!"
+AttributeError: 'NoneType' object has no attribute 'style'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapter1.rpy", line 484, in script
-    show Akari p2 nervous u at center:
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 1183, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 1153, in show_imspec
-    atl=atl)
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\exports.py", line 717, in show
-    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\display\core.py", line 1078, in add
-    thing._show()
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\display\transform.py", line 1048, in _show
-    super(ATLTransform, self)._show()
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\display\transform.py", line 1014, in _show
-    self.update_state()
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\display\transform.py", line 1036, in update_state
-    fr = self.execute(self, self.st, self.at)
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\atl.py", line 521, in execute
-    block = self.compile()
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\atl.py", line 489, in compile
-    block = self.atl.compile(self.context)
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\atl.py", line 684, in compile
-    statements = [ i.compile(ctx) for i in self.statements ]
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\atl.py", line 906, in compile
-    child = renpy.easy.displayable(child)
-  File "C:\Users\Kevin\Downloads\renpy-7.3.5-sdk\renpy\easy.py", line 136, in displayable
-    raise Exception("Not a displayable: %r" % (d,))
-Exception: Not a displayable: <curry <class 'renpy.display.transition.Dissolve'> (0.3,) {}>
+  File "game/chapter2-dinnerAtAkaris.rpy", line 956, in script
+    Yukiko "Hey, Hiroya!"
+  File "/Applications/renpy-7.3.2-sdk/renpy/ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Applications/renpy-7.3.2-sdk/renpy/exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "/Applications/renpy-7.3.2-sdk/renpy/character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "/Applications/renpy-7.3.2-sdk/renpy/character.py", line 842, in do_display
+    **display_args)
+  File "/Applications/renpy-7.3.2-sdk/renpy/character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Applications/renpy-7.3.2-sdk/renpy/ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Applications/renpy-7.3.2-sdk/renpy/display/core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/Applications/renpy-7.3.2-sdk/renpy/display/core.py", line 3194, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/Applications/renpy-7.3.2-sdk/renpy/display/core.py", line 2094, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 490, in renpy.display.render.render_screen (gen/renpy.display.render.c:6805)
+    rv = render(root, width, height, st, st)
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Applications/renpy-7.3.2-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Applications/renpy-7.3.2-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Applications/renpy-7.3.2-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Applications/renpy-7.3.2-sdk/renpy/display/transition.py", line 361, in render
+    top = render(self.new_widget, width, height, st, at)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 218, in renpy.display.render.render (gen/renpy.display.render.c:3017)
+    style = d.style
+AttributeError: 'NoneType' object has no attribute 'style'
 
-Windows-8-6.2.9200
+Darwin-20.1.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
-Sugawara Chronicle 0.21c
-Mon Oct 05 23:54:46 2020
+Sugawara Chronicle 0.22a
+Sun Nov 29 22:30:02 2020
